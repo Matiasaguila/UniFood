@@ -209,7 +209,7 @@ $(function () {
         slidesToShow: 6,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 4000,
+        autoplaySpeed: 2000,
         dots: false,
         arrows: false,
         // nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
@@ -267,6 +267,9 @@ $(function () {
         }
     });
 
+
+    //=== velobox.js ===
+    $('.venobox').venobox();
 
 
 });
