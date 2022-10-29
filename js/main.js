@@ -17,6 +17,17 @@ $(function () {
         });
     }
 
+    //=========NICE SELECT=========
+    $('#select_js').niceSelect();
+    $('#select_js2').niceSelect();
+
+
+
+    //=======MENU SEARCH====== 
+    $(".menu_search").click(function () {
+        $(".wsus__search_form").toggleClass("show");
+    });
+
 
     //=======BANNER SLIDER====== 
     $('.banner_slider').slick({
@@ -268,8 +279,60 @@ $(function () {
     });
 
 
-    //=== velobox.js ===
+    //======= VENOBOX.JS.=========
     $('.venobox').venobox();
+
+
+    //*========STICKY SIDEBAR======= 
+    $("#sticky_sidebar").stickit({
+        top: 95,
+    })
+
+
+    //=======OFFER ITEM SLIDER====== 
+    $('.blog_det_slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        dots: true,
+        arrows: false,
+
+        responsive: [
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
+    });
+
+
 
 
 });
