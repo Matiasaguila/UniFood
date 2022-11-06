@@ -4224,7 +4224,7 @@ CHECKOUT PAGE START
 
 .wsus__signin_overlay,
 .wsus__signup_overlay {
-    background: #ffffff75;
+    background: #ffffffe8;
 }
 
 .wsus__login_area {
@@ -4387,6 +4387,240 @@ CHECKOUT PAGE START
 /* ==================================
     SIGNIN END
 =================================== */
+
+
+/*============================
+    PAYMENT PAGE START
+============================*/
+.wsus__payment_page {}
+
+.wsus__payment_area {}
+
+.wsus__single_payment {
+    border: 1px solid var(--colorPrimary);
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 7px;
+    background: #faf6f3fa;
+    display: block;
+    transition: all linear .3s;
+    margin-top: 25px;
+}
+
+.wsus__single_payment img {
+    box-shadow: var(--boxShadow);
+    border-radius: 4px;
+}
+
+.wsus__single_payment:hover {
+    background: var(--colorPrimary);
+}
+
+.wsus__pay_modal_info p {
+    margin-bottom: 20px;
+}
+
+.wsus__pay_modal_info ul li {
+    font-size: 16px;
+    color: var(--paraColor);
+    position: relative;
+    padding-left: 35px;
+    margin: 10px 0px;
+}
+
+.wsus__pay_modal_info ul li::after {
+    position: absolute;
+    content: "\f00c";
+    color: var(--colorWhite);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 50%;
+    background: var(--gradiantBg);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__pay_modal_info input,
+.wsus__pay_modal_info textarea,
+.wsus__pay_modal_info .nice-select {
+    border: 1px solid #eee;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.wsus__pay_modal_info .nice-select {
+    margin-top: 10px;
+}
+
+.wsus__pay_modal_info .nice-select .option {
+    font-weight: 400;
+    margin: 0;
+}
+
+.wsus__pay_modal_info .nice-select .option::after {
+    display: none;
+}
+
+.wsus__payment_btn_area {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.wsus__payment_btn_area button {
+    border-radius: 3px;
+    border: none;
+    padding: 10px 30px;
+    text-transform: capitalize;
+}
+
+/*============================
+    PAYMENT PAGE END
+============================*/
+
+
+/*============================
+    FAQ PAGE START
+============================*/
+.wsus__faq {}
+
+.wsus__faq_area .accordion-item {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+}
+
+.wsus__faq_area .accordion-item h2 button {
+    background: var(--gradiantBg);
+    color: var(--colorWhite);
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+}
+
+.wsus__faq_area .accordion-button:focus {
+    box-shadow: none;
+}
+
+.wsus__faq_area .accordion-body {
+    padding: 20px;
+}
+
+.wsus__faq_area .accordion-body p {
+    border-left: 3px solid var(--colorPrimary);
+    padding-left: 15px;
+}
+
+.accordion-button::after {
+    background-image: url(../images/faq_plus.jpg);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url(../images//faq_minus.jpg);
+}
+
+.wsus__details_video h4 {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: var(--colorBlack);
+}
+
+.wsus__faq_img {
+    margin-top: 20px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--boxShadow);
+    padding: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wsus__faq_img img {
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/*============================
+    FAQ PAGE END
+============================*/
+
+
+
+/* =================================
+    TERMS AND CONDITION START
+================================= */
+
+.wsus__terms_condition .wsus__career_det_text P {
+    margin-bottom: 20px;
+}
+
+.wsus__terms_condition h3 {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.wsus__terms_condition ul,
+.wsus__terms_condition ol {
+    margin-bottom: 20px;
+}
+
+.wsus__terms_condition ul li,
+.wsus__terms_condition ol li {
+    color: var(--paraColor);
+    margin-top: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.wsus__career_det_text ul li::after,
+.wsus__career_det_text ol li::after {
+    position: absolute;
+    content: "\f30b";
+    font-family: 'Font Awesome 5 Free';
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: var(--colorPrimary);
+    left: 0;
+    top: 1px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+/* =================================
+    TERMS AND CONDITION END
+================================= */
+
+
+
 
 
 
