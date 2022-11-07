@@ -760,7 +760,7 @@ form.wsus__search_form.show {
     font-weight: 600;
 }
 
-.wsus__reservation_form input {
+.wsus__reservation_form input[type=date] {
     text-transform: uppercase;
 }
 
@@ -4620,6 +4620,71 @@ CHECKOUT PAGE START
 ================================= */
 
 
+
+/*============================
+    404 page START
+============================*/
+.wsus__404 {
+    height: 100vh;
+    padding-top: 130px;
+}
+
+.wsus__404 div {
+    height: 100%;
+}
+
+.wsus__404_text {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.wsus__404_text img {
+    height: 270px !important;
+    width: 460px !important;
+}
+
+.wsus__404_text h2 {
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.wsus__404_text p {
+    margin: 10px 0px 20px 0px;
+    font-size: 18px;
+}
+
+/*============================
+    404 page END
+============================*/
+
+
+/*============================
+    TESTIMONIAL PAGE START
+============================*/
+.wsus__testimonial_page {}
+
+
+.wsus__testimonial_page .wsus__single_testimonial {
+    margin: 25px 0px 0px 0px;
+}
+
+
+
+
+
+
+
+
+/*============================
+    TESTIMONIAL PAGE END
+============================*/
 
 
 
