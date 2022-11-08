@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/venobox.min.css">
+    <link rel="stylesheet" href="css/animate.css">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
@@ -78,13 +79,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">pages <i class="far fa-plus"></i></a>
                         <ul class="droap_menu">
-                            <li><a href="#">item a</a></li>
-                            <li><a href="#">item b</a></li>
-                            <li><a href="#">item c</a></li>
-                            <li><a href="#">item d</a></li>
-                            <li><a href="#">item e</a></li>
-                            <li><a href="#">item f</a></li>
-                            <li><a href="#">item g</a></li>
+                            <li><a href="menu_details.html">menu details</a></li>
+                            <li><a href="blog_details.html">blog details</a></li>
+                            <li><a href="cart_view.html">cart view</a></li>
+                            <li><a href="check_out.html">checkout</a></li>
+                            <li><a href="payment.html">payment</a></li>
+                            <li><a href="testimonial.html">testimonial</a></li>
+                            <li><a href="404.html">404/Error</a></li>
+                            <li><a href="faq.html">FAQs</a></li>
+                            <li><a href="sign_in.html">sign in</a></li>
+                            <li><a href="sign_up.html">sign up</a></li>
+                            <li><a href="privacy_policy.html">privacy policy</a></li>
+                            <li><a href="terms_condition.html">terms and condition</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -107,7 +113,7 @@
                             aria-controls="offcanvasRight"><i class="fas fa-shopping-basket"></i> <span>5</span></a>
                     </li>
                     <li>
-                        <a href="#"><i class="fas fa-user"></i></a>
+                        <a href="sign_in.html"><i class="fas fa-user"></i></a>
                     </li>
                     <li>
                         <a class="common_btn" href="#" data-bs-toggle="modal"
@@ -198,8 +204,8 @@
                     </li>
                 </ul>
                 <p class="subtotal">sub total <span>$1220.00</span></p>
-                <a class="checkout" href="#">checkout</a>
-                <a class="cart_view" href="#"> view cart</a>
+                <a class="checkout" href="check_out.html">checkout</a>
+                <a class="cart_view" href="cart_view.html"> view cart</a>
             </div>
         </div>
     </div>
@@ -215,6 +221,8 @@
                     </div>
                     <div class="modal-body">
                         <form class="wsus__reservation_form">
+                            <input class="reservation_input" type="text" placeholder="Name">
+                            <input class="reservation_input" type="text" placeholder="Phone">
                             <input class="reservation_input" type="date">
                             <select class="reservation_input" id="select_js">
                                 <option value="">select time</option>
@@ -271,12 +279,12 @@
     <section class="wsus__menu_details mt_115 xs_mt_85 mb_95 xs_mb_65">
         <div class="container">
             <div class="row">
-                <div class="col-xl-6">
+                <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s">
                     <div class="wsus__menu_details_images">
                         <img src="images/menu1.png" alt="menu item" class="img-fluid w-100">
                     </div>
                 </div>
-                <div class="col-xl-6">
+                <div class="col-xl-6 wow fadeInUp" data-wow-duration="1s">
                     <div class="wsus__menu_details_text">
                         <h2>Maxican Pizza Test Better</h2>
                         <p class="rating">
@@ -324,7 +332,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
+                <div class="col-12 wow fadeInUp" data-wow-duration="1s">
                     <div class="wsus__menu_description_area mt_100 xs_mt_70">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
@@ -453,6 +461,14 @@
                                                     <img src="images/comment_img_1.png" alt="review" class="img-fluid">
                                                     <div class="wsus__single_comm_text">
                                                         <h3>Michel Holder <span>29 oct 2022 </span></h3>
+                                                        <span class="rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fad fa-star-half-alt"></i>
+                                                            <i class="fal fa-star"></i>
+                                                            <b>(120)</b>
+                                                        </span>
                                                         <p>Sure there isn't anything embarrassing hiidden in the
                                                             middles of text. All erators on the Internet
                                                             tend to repeat predefined chunks</p>
@@ -463,6 +479,14 @@
                                                     <img src="images/chef_1.jpg" alt="review" class="img-fluid">
                                                     <div class="wsus__single_comm_text">
                                                         <h3>salina khan <span>29 oct 2022 </span></h3>
+                                                        <span class="rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fad fa-star-half-alt"></i>
+                                                            <i class="fal fa-star"></i>
+                                                            <b>(120)</b>
+                                                        </span>
                                                         <p>Sure there isn't anything embarrassing hiidden in the
                                                             middles of text. All erators on the Internet
                                                             tend to repeat predefined chunks</p>
@@ -473,6 +497,14 @@
                                                     <img src="images/comment_img_2.png" alt="review" class="img-fluid">
                                                     <div class="wsus__single_comm_text">
                                                         <h3>Mouna Sthesia <span>29 oct 2022 </span></h3>
+                                                        <span class="rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fad fa-star-half-alt"></i>
+                                                            <i class="fal fa-star"></i>
+                                                            <b>(120)</b>
+                                                        </span>
                                                         <p>Sure there isn't anything embarrassing hiidden in the
                                                             middles of text. All erators on the Internet
                                                             tend to repeat predefined chunks</p>
@@ -483,6 +515,14 @@
                                                     <img src="images/chef_3.jpg" alt="review" class="img-fluid">
                                                     <div class="wsus__single_comm_text">
                                                         <h3>marjan janifar <span>29 oct 2022 </span></h3>
+                                                        <span class="rating">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fad fa-star-half-alt"></i>
+                                                            <i class="fal fa-star"></i>
+                                                            <b>(120)</b>
+                                                        </span>
                                                         <p>Sure there isn't anything embarrassing hiidden in the
                                                             middles of text. All erators on the Internet
                                                             tend to repeat predefined chunks</p>
@@ -492,83 +532,6 @@
                                                 <a href="#" class="load_more">load More</a>
                                             </div>
 
-                                            <!-- <div class="wsus__review_area">
-                                                <h4>Reviews <span>02</span></h4>
-                                                <div class="wsus__single_review">
-                                                    <div class="wsus__single_review_img">
-                                                        <img src="images/client_img_3.jpg" alt="user"
-                                                            class="img-fluid w-100">
-                                                    </div>
-                                                    <div class="wsus__single_review_text reply">
-                                                        <h6>Shopnil mahadi <span>4 <i class="fas fa-star"></i></span>
-                                                        </h6>
-                                                        <span class="date">09 Jul 2021</span>
-                                                        <p>Dolor sit amet consectetur adipisicing elit.
-                                                            Delectus molestiae vitae cum facere deleniti ducimus quod
-                                                            veniam. Placeat itaque earum quisquam ut voluptatibus alias
-                                                            necessitatibus molestias, pariatur eos, laborum, facere
-                                                            nesciunt! Quod eius repudiandae.
-                                                        </p>
-                                                        <a href="#" data-bs-toggle="collapse"
-                                                            data-bs-target="#flush-collapsetwo">reply</a>
-                                                        <div class="accordion accordion-flush"
-                                                            id="accordionFlushExample2">
-                                                            <div class="accordion-item">
-                                                                <div id="flush-collapsetwo"
-                                                                    class="accordion-collapse collapse"
-                                                                    aria-labelledby="flush-collapsetwo"
-                                                                    data-bs-parent="#accordionFlushExample">
-                                                                    <div class="accordion-body">
-                                                                        <form>
-                                                                            <textarea rows="3"
-                                                                                placeholder="Comment"></textarea>
-                                                                            <button type="submit"
-                                                                                class="common_btn">submit</button>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="wsus__single_review">
-                                                    <div class="wsus__single_review_img">
-                                                        <img src="images/client_img_1.jpg" alt="user"
-                                                            class="img-fluid w-100">
-                                                    </div>
-                                                    <div class="wsus__single_review_text reply">
-                                                        <h6>Smith jhon <span>5 <i class="fas fa-star"></i></span>
-                                                        </h6>
-                                                        <span class="date">09 Jul 2021</span>
-                                                        <p>Ipsum dolor, sit amet consectetur adipisicing elit. Delectus
-                                                            molestiae vitae cum facere deleniti ducimus quod veniam.
-                                                            Placeat itaque earum quisquam ut voluptatibus alias
-                                                            necessitatibus
-                                                        </p>
-                                                        <a href="#" data-bs-toggle="collapse"
-                                                            data-bs-target="#flush-collapsetwo2">reply</a>
-                                                        <div class="accordion accordion-flush"
-                                                            id="accordionFlushExample2">
-                                                            <div class="accordion-item">
-                                                                <div id="flush-collapsetwo2"
-                                                                    class="accordion-collapse collapse"
-                                                                    aria-labelledby="flush-collapsetwo"
-                                                                    data-bs-parent="#accordionFlushExample">
-                                                                    <div class="accordion-body">
-                                                                        <form>
-                                                                            <textarea rows="3"
-                                                                                placeholder="Your Text"></textarea>
-                                                                            <button type="submit"
-                                                                                class="common_btn">submit</button>
-                                                                        </form>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                
-                                            </div> -->
                                         </div>
                                         <div class="col-xl-4">
                                             <div class="wsus__post_review">
@@ -611,7 +574,7 @@
             <div class="wsus__related_menu mt_90 xs_mt_60">
                 <h2>related item</h2>
                 <div class="row related_product_slider">
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__menu_item">
                             <div class="wsus__menu_item_img">
                                 <img src="images/menu8.png" alt="menu" class="img-fluid w-100">
@@ -636,7 +599,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__menu_item">
                             <div class="wsus__menu_item_img">
                                 <img src="images/menu1.png" alt="menu" class="img-fluid w-100">
@@ -661,7 +624,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__menu_item">
                             <div class="wsus__menu_item_img">
                                 <img src="images/menu2.png" alt="menu" class="img-fluid w-100">
@@ -686,7 +649,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__menu_item">
                             <div class="wsus__menu_item_img">
                                 <img src="images/menu3.png" alt="menu" class="img-fluid w-100">
@@ -711,7 +674,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-3">
+                    <div class="col-xl-3 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__menu_item">
                             <div class="wsus__menu_item_img">
                                 <img src="images/menu7.png" alt="menu" class="img-fluid w-100">
@@ -751,7 +714,7 @@
     <section class="wsus__brand" style="background: url(images/counter_bg.jpg);">
         <div class="wsus__brand_overlay">
             <div class="container">
-                <div class="row brand_slider">
+                <div class="row brand_slider wow fadeInUp" data-wow-duration="1s">
                     <div class="col-xl-2">
                         <a class="wsus__single_brand" href="#">
                             <img src="images/brand_1.png" alt="brand" class="img-fluid w-100">
@@ -802,7 +765,7 @@
     ==============================-->
     <footer style="background: url(images/download_bg.jpg);">
         <div class="footer_overlay pt_100 xs_pt_70 pb_100 xs_pb_70">
-            <div class="container">
+            <div class="container wow fadeInUp" data-wow-duration="1s">
                 <div class="row justify-content-between">
                     <div class="col-xl-3">
                         <div class="wsus__footer_content">
@@ -896,7 +859,7 @@
         go to top
     </div>
     <!--=============================
-        SCROLL BUTTON END
+        SCROLL BUTTON END 
     ==============================-->
 
 
@@ -907,15 +870,23 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <!--font-awesome js-->
     <script src="js/Font-Awesome.js"></script>
+    <!-- slick slider -->
     <script src="js/slick.min.js"></script>
+    <!-- isotop js -->
     <script src="js/isotope.pkgd.min.js"></script>
+    <!-- simplyCountdownjs -->
     <script src="js/simplyCountdown.js"></script>
+    <!-- counter up js -->
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/jquery.countup.min.js"></script>
+    <!-- nice select js -->
     <script src="js/jquery.nice-select.min.js"></script>
+    <!-- venobox js -->
     <script src="js/venobox.min.js"></script>
+    <!-- sticky sidebar js -->
     <script src="js/sticky_sidebar.js"></script>
-
+    <!-- wow js -->
+    <script src="js/wow.min.js"></script>
     <!--main/custom js-->
     <script src="js/main.js"></script>
 

@@ -384,4 +384,51 @@ $(function () {
     new WOW().init();
 
 
+
+    //*==========PERSONAL INFO==========  
+    $(".dash_info_btn").click(function () {
+        $(".wsus_dash_personal_info").toggleClass("show");
+    });
+
+
+
+
+
+    //*==========ORDER HISTORY==========  
+    $(".view_invoice").on("click", function () {
+        $(".wsus_dashboard_order").fadeOut();
+    });
+
+    $('.view_invoice').on('click', function () {
+        $(".wsus__invoice").fadeIn();
+    });
+
+    $(".go_back").on("click", function () {
+        $(".wsus_dashboard_order").fadeIn();
+    });
+
+    $(".go_back").on("click", function () {
+        $(".wsus__invoice").fadeOut();
+    });
+
+
+
+    //*==========DASHBOARD TICKET==========  
+    $(".ticket_invoice_view").on("click", function () {
+        $(".support_ticket").fadeOut();
+    });
+
+    $('.ticket_invoice_view').on('click', function () {
+        $(".wsus__ticket_list_view").fadeIn();
+    });
+
+    $(".go_ticket").on("click", function () {
+        $(".support_ticket").fadeIn();
+    });
+
+    $(".go_ticket").on("click", function () {
+        $(".wsus__ticket_list_view").fadeOut();
+    });
+
+
 });
