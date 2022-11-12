@@ -65,7 +65,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">about</a>
@@ -77,7 +77,7 @@
                         <a class="nav-link" href="chefs.html">chefs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">pages <i class="far fa-plus"></i></a>
+                        <a class="nav-link active" href="#">pages <i class="far fa-plus"></i></a>
                         <ul class="droap_menu">
                             <li><a href="menu_details.html">menu details</a></li>
                             <li><a href="blog_details.html">blog details</a></li>
@@ -88,7 +88,8 @@
                             <li><a href="404.html">404/Error</a></li>
                             <li><a href="faq.html">FAQs</a></li>
                             <li><a href="sign_in.html">sign in</a></li>
-                            <li><a href="sign_up.html">sign up</a></li>
+                            <li><a class="active" href="sign_up.html">sign up</a></li>
+                            <li><a href="forgot_password.html">forgot password</a></li>
                             <li><a href="privacy_policy.html">privacy policy</a></li>
                             <li><a href="terms_condition.html">terms and condition</a></li>
                         </ul>
@@ -113,7 +114,7 @@
                             aria-controls="offcanvasRight"><i class="fas fa-shopping-basket"></i> <span>5</span></a>
                     </li>
                     <li>
-                        <a href="sign_in.html"><i class="fas fa-user"></i></a>
+                        <a href="dashboard.html"><i class="fas fa-user"></i></a>
                     </li>
                     <li>
                         <a class="common_btn" href="#" data-bs-toggle="modal"
@@ -204,8 +205,8 @@
                     </li>
                 </ul>
                 <p class="subtotal">sub total <span>$1220.00</span></p>
-                <a class="checkout" href="check_out.html">checkout</a>
                 <a class="cart_view" href="cart_view.html"> view cart</a>
+                <a class="checkout" href="check_out.html">checkout</a>
             </div>
         </div>
     </div>
@@ -278,58 +279,58 @@
         SIGN UP START
     ==========================-->
     <section class="wsus__signup" style="background: url(images/login_bg.jpg);">
-        <div class="wsus__signup_overlay pt_125 xs_pt_95 pb_100 xs_pb_70"">
+        <div class="wsus__signup_overlay pt_125 xs_pt_95 pb_100 xs_pb_70">
             <div class=" container">
-            <div class="row wow fadeInUp" data-wow-duration="1s">
-                <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
-                    <div class="wsus__login_area">
-                        <h2>Welcome back!</h2>
-                        <p>sign up to continue</p>
-                        <form>
-                            <div class="row">
-                                <div class="col-xl-12">
-                                    <div class="wsus__login_imput">
-                                        <label>name</label>
-                                        <input type="text" placeholder="Name">
+                <div class="row wow fadeInUp" data-wow-duration="1s">
+                    <div class="col-xxl-5 col-xl-6 col-md-9 col-lg-7 m-auto">
+                        <div class="wsus__login_area">
+                            <h2>Welcome back!</h2>
+                            <p>sign up to continue</p>
+                            <form>
+                                <div class="row">
+                                    <div class="col-xl-12">
+                                        <div class="wsus__login_imput">
+                                            <label>name</label>
+                                            <input type="text" placeholder="Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="wsus__login_imput">
+                                            <label>email</label>
+                                            <input type="email" placeholder="Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="wsus__login_imput">
+                                            <label>password</label>
+                                            <input type="password" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="wsus__login_imput">
+                                            <label>confirm password</label>
+                                            <input type="password" placeholder="Confirm Password">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-12">
+                                        <div class="wsus__login_imput">
+                                            <button type="submit" class="common_btn">login</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-12">
-                                    <div class="wsus__login_imput">
-                                        <label>email</label>
-                                        <input type="email" placeholder="Email">
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="wsus__login_imput">
-                                        <label>password</label>
-                                        <input type="password" placeholder="Password">
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="wsus__login_imput">
-                                        <label>confirm password</label>
-                                        <input type="password" placeholder="Confirm Password">
-                                    </div>
-                                </div>
-                                <div class="col-xl-12">
-                                    <div class="wsus__login_imput">
-                                        <button type="submit" class="common_btn">login</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                        <p class="or"><span>or</span></p>
-                        <ul class="d-flex">
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
-                        </ul>
-                        <p class="create_account">Dont’t have an aceount ? <a href="sign_in.html">login</a></p>
+                            </form>
+                            <p class="or"><span>or</span></p>
+                            <ul class="d-flex">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                            <p class="create_account">Dont’t have an aceount ? <a href="sign_in.html">login</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!--=========================
@@ -381,7 +382,6 @@
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <!--=============================
@@ -490,7 +490,6 @@
     <!--=============================
         SCROLL BUTTON END 
     ==============================-->
-
 
 
     <!--jquery library js-->
