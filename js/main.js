@@ -27,7 +27,11 @@ $(function () {
 
     //=======MENU SEARCH======
     $(".menu_search").click(function () {
-        $(".wsus__search_form").toggleClass("show");
+        $(".wsus__search_form").addClass("show");
+    });
+
+    $(".close_search").click(function () {
+        $(".wsus__search_form").removeClass("show");
     });
 
 
@@ -58,25 +62,25 @@ $(function () {
             {
                 breakpoint: 1400,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 3,
                 }
             },
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 4,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             },
             {
@@ -150,7 +154,7 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -192,13 +196,13 @@ $(function () {
             {
                 breakpoint: 1200,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
