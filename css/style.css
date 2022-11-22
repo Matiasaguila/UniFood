@@ -3625,13 +3625,8 @@ footer {
     margin-top: 5px;
 }
 
-.wsus_dash_personal_info input,
-.wsus_dash_personal_info textarea {
-    margin-bottom: 20px;
-}
-
 .wsus_dash_personal_info button {
-    margin-top: -5px;
+    margin-top: 15px;
 }
 
 /*================================
@@ -4325,6 +4320,7 @@ CHECKOUT PAGE START
 .wsus__check_form .nice-select {
     border: 1px solid #eee !important;
     padding: 12px 20px;
+    margin-bottom: 20px;
 }
 
 /*======================
@@ -4976,6 +4972,7 @@ CHECKOUT PAGE START
     margin-top: 20px;
     display: flex;
     justify-content: start;
+    margin-bottom: 0 !important;
 }
 
 .wsus_dash_personal_info p span {

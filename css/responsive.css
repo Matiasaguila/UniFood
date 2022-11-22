@@ -10,6 +10,10 @@
         width: 450px !important;
     }
 
+    .wsus__single_blog_img {
+        height: 450px;
+    }
+
     /* ======HOME PAGE END====== */
 
 
@@ -186,13 +190,23 @@
         width: 60%;
     }
 
-
-
-
-
-
-
     /* ======BLOG DETAILS END====== */
+
+
+    /* ======CONTACT START====== */
+    .wsus__contact_form {
+        margin-bottom: 25px;
+    }
+
+    .wsus__contact_map {
+        height: 450px;
+    }
+
+    .wsus__contact_info {
+        padding: 25px;
+    }
+
+    /* ======CONTACT END====== */
 
 
 }
@@ -611,6 +625,25 @@
 
     /* ======BLOG DETAILS END====== */
 
+    .wsus__cart_list {
+        margin-bottom: 25px;
+    }
+
+    .wsus__check_form {
+        margin-bottom: 25px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    /* ======CONTACT START====== */
+    .wsus__contact_form {
+        margin-bottom: 25px;
+    }
+
+    .wsus__contact_map {
+        height: 400px;
+    }
+
+    /* ======CONTACT END====== */
 
 
 }
@@ -1158,7 +1191,32 @@
     /* ======BLOG DETAILS END====== */
 
 
+    .wsus__cart_list {
+        margin-bottom: 25px;
+    }
 
+    .wsus__check_form {
+        margin-bottom: 25px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .wsus__pagination ul li a {
+        width: 40px !important;
+        height: 40px !important;
+        line-height: 40px !important;
+    }
+
+
+    /* ======CONTACT START====== */
+    .wsus__contact_form {
+        margin-bottom: 25px;
+    }
+
+    .wsus__contact_map {
+        height: 300px;
+    }
+
+    /* ======CONTACT END====== */
 
 
 }
@@ -1813,6 +1871,133 @@
     }
 
     /* ======BLOG DETAILS END====== */
+
+
+    .wsus__cart_list {
+        margin-bottom: 25px;
+    }
+
+    .wsus__check_form {
+        margin-bottom: 25px;
+        padding: 20px 20px 0px 20px;
+    }
+
+    .wsus__pagination ul li a {
+        width: 30px !important;
+        height: 30px !important;
+        line-height: 30px !important;
+        font-size: 14px !important;
+    }
+
+
+    /* ======CONTACT START====== */
+    .wsus__contact_form {
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+
+    .wsus__contact_map {
+        height: 300px;
+    }
+
+    /* ======CONTACT END====== */
+
+
+    /* ======DASHBOARD START====== */
+    .wsus__dashboard_area {
+        border: none;
+    }
+
+    .wsus__dashboard_content {
+        padding: 0;
+    }
+
+    .wsus_dash_personal_info {
+        border-radius: 0;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .wsus_dashboard_body h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .wsus_dash_personal_info h4 {
+        font-size: 16px;
+    }
+
+    .wsus_dash_personal_info p {
+        flex-wrap: wrap;
+    }
+
+    .wsus_dash_personal_info p span {
+        min-width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .wsus_dash_personal_info.show .wsus_dash_personal_info_edit {
+        margin: 0;
+    }
+
+    .wsus_dashboard_order table {
+        border-radius: 0;
+    }
+
+    .wsus_dashboard_order table tr th,
+    .wsus_dashboard_order table tr td {
+        width: 140px;
+    }
+
+    .wsus_dashboard_body .wsus__invoice {
+        border-radius: 0px;
+        padding: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .wsus__invoice_header .header_address {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .wsus__invoice_header {
+        margin-top: 15px;
+    }
+
+    .wsus__invoice .sl_no {
+        min-width: 80px;
+    }
+
+    .wsus__invoice .package {
+        min-width: 180px;
+    }
+
+    .wsus__invoice .price,
+    .wsus__invoice .qnty,
+    .wsus__invoice .total {
+        min-width: 100px;
+    }
+
+    .wsus__invoice_header .header_address h4 {
+        font-size: 18px;
+    }
+
+    .wsus__single_comm_text .rating {
+        margin-top: 10px;
+    }
+
+    .wsus__single_comment.replay .wsus__single_comm_text {
+        width: 100%;
+    }
+
+
+
+
+    /* ======DASHBOARD END====== */
+
 
 
 
