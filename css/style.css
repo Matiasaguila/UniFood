@@ -44,7 +44,7 @@ span {
 }
 
 body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     scroll-behavior: smooth;
     color: var(--paraColor);
     font-family: var(--paraFont);
@@ -526,7 +526,8 @@ button {
     -o-transition: all linear .3s;
 }
 
-.main_menu .menu_icon li a:hover {
+.main_menu .menu_icon li a:hover,
+.main_menu .menu_icon li a.active {
     color: var(--colorPrimary);
 }
 
@@ -2474,7 +2475,7 @@ footer {
     flex-wrap: wrap;
     justify-content: center;
     position: absolute;
-    min-width: 230px;
+    min-width: 265px;
     bottom: -22px;
     left: 50%;
     transform: translateX(-50%);
@@ -2833,8 +2834,6 @@ footer {
 /*============================
     CONTACT START
 ============================*/
-.wsus__contact {}
-
 .wsus__contact_info {
     background-position: center !important;
     background-repeat: no-repeat !important;
@@ -2929,21 +2928,6 @@ footer {
 
 .wsus__contact_info a:hover {
     color: var(--colorPrimary);
-}
-
-
-
-
-
-
-
-
-
-
-.wsus__contact_form_area {
-    /* background: #faf6f3fa;
-    border-radius: 10px;
-    padding: 30px; */
 }
 
 .wsus__contact_form {
@@ -3375,7 +3359,7 @@ footer {
     color: #ff9933;
     font-size: 14px;
     display: block;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .wsus__single_comm_text .rating b {
@@ -3637,8 +3621,6 @@ footer {
 /*============================
     MENU DETAILS START
 ============================*/
-.wsus__menu_details {}
-
 .wsus__menu_details_images {
     border: 1px solid #eee;
     padding: 50px;
@@ -3683,6 +3665,10 @@ footer {
 
 .wsus__menu_details_text .short_description {
     margin-bottom: 25px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .details_size,
@@ -3811,7 +3797,7 @@ footer {
 }
 
 .wsus__menu_description_area .nav .nav-item:last-child {
-    border-right: 0;
+    border: 0;
 }
 
 .wsus__menu_description_area .nav .nav-item .nav-link {
@@ -4508,10 +4494,6 @@ CHECKOUT PAGE START
 /*============================
     PAYMENT PAGE START
 ============================*/
-.wsus__payment_page {}
-
-.wsus__payment_area {}
-
 .wsus__single_payment {
     border: 1px solid var(--colorPrimary);
     border-radius: 5px;
@@ -4521,6 +4503,7 @@ CHECKOUT PAGE START
     display: block;
     transition: all linear .3s;
     margin-top: 25px;
+    height: 110px;
 }
 
 .wsus__single_payment img {
@@ -4610,8 +4593,6 @@ CHECKOUT PAGE START
 /*============================
     FAQ PAGE START
 ============================*/
-.wsus__faq {}
-
 .wsus__faq_area .accordion-item {
     margin-top: 20px;
     border: none;
@@ -4627,6 +4608,7 @@ CHECKOUT PAGE START
     font-size: 16px;
     font-weight: 500;
     border: none;
+    padding-right: 60px;
 }
 
 .wsus__faq_area .accordion-button:focus {
@@ -4647,6 +4629,8 @@ CHECKOUT PAGE START
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
 }
 
 .accordion-button:not(.collapsed)::after {
@@ -4798,6 +4782,7 @@ CHECKOUT PAGE START
 .wsus__404_text p {
     margin: 10px 0px 20px 0px;
     font-size: 18px;
+    text-align: center;
 }
 
 /*============================
@@ -5217,12 +5202,11 @@ CHECKOUT PAGE START
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
     margin: 30px 0px;
 }
 
 .wsus__invoice_header .header_address {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 .wsus__invoice_header .header_address h4 {
@@ -5371,12 +5355,9 @@ CHECKOUT PAGE START
 ========================*/
 
 
-
 /*============================
     HOME 2 START
 ============================*/
-.home_2 {}
-
 /* menu start */
 .home_2 .main_menu {
     top: 20px;
@@ -5540,7 +5521,7 @@ CHECKOUT PAGE START
 }
 
 .wsus__offer_item2_overlay {
-    background: rgb(255 255 255 / 87%);
+    background: rgb(248 248 248);
 }
 
 .wsus__section_heading2 h4 {
@@ -6098,6 +6079,10 @@ CHECKOUT PAGE START
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .latest_post li .text a::after {

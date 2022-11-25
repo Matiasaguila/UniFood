@@ -2,7 +2,6 @@ $(function () {
 
     "use strict";
 
-
     //======menu fix js======
     if ($('.main_menu').offset() != undefined) {
         var navoff = $('.main_menu').offset().top;
@@ -22,7 +21,6 @@ $(function () {
     $('#select_js2').niceSelect();
     $('#select_js3').niceSelect();
     $('#select_js4').niceSelect();
-
 
 
     //=======MENU SEARCH======
@@ -113,9 +111,7 @@ $(function () {
     });
 
 
-
-
-    //*==========simplyCountdown==============
+    //*=======simplyCountdown========
     var d = new Date(),
         countUpDate = new Date();
     d.setDate(d.getDate() + 365);
@@ -289,7 +285,7 @@ $(function () {
 
     //*========STICKY SIDEBAR=======
     $("#sticky_sidebar").stickit({
-        top: 95,
+        top: 10,
     })
 
 
@@ -337,7 +333,6 @@ $(function () {
     });
 
 
-
     //=======OFFER ITEM SLIDER======
     $('.related_product_slider').slick({
         slidesToShow: 4,
@@ -365,13 +360,13 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 3,
+                    slidesToShow: 2,
                 }
             },
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
             },
             {
@@ -412,7 +407,6 @@ $(function () {
     });
 
 
-
     //*==========DASHBOARD TICKET==========
     $(".ticket_invoice_view").on("click", function () {
         $(".support_ticket").fadeOut();
@@ -429,9 +423,6 @@ $(function () {
     $(".go_ticket").on("click", function () {
         $(".wsus__ticket_list_view").fadeOut();
     });
-
-
-
 
 
     //=======OFFER ITEM SLIDER======

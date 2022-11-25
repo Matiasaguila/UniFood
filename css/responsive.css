@@ -14,6 +14,10 @@
         height: 450px;
     }
 
+    .wsus__menu_item .wsus__menu_item_text .title {
+        font-size: 21px;
+    }
+
     /* ======HOME PAGE END====== */
 
 
@@ -25,7 +29,33 @@
     /* ======ABOUT PAGE END====== */
 
 
+    .wsus__faq_img {
+        height: 500px;
+    }
 
+    .wsus__single_comm_text {
+        width: 83%;
+    }
+
+    .wsus__single_comment.replay .wsus__single_comm_text {
+        width: 82%;
+    }
+
+    .wsus__single_payment {
+        height: 95px;
+    }
+
+    .wsus__download2 .wsus__download_img {
+        height: 360px;
+    }
+
+    .wsus__subscribe_text h3 {
+        font-size: 35px;
+    }
+
+    .latest_post li .text {
+        width: 73%;
+    }
 
 }
 
@@ -209,6 +239,64 @@
     /* ======CONTACT END====== */
 
 
+
+    /* ======DASHBOARD START====== */
+    .wsus__invoice_header .header_address {
+        max-width: 45%;
+    }
+
+    /* ======DASHBOARD END====== */
+
+    .wsus__faq_img {
+        height: 400px;
+    }
+
+
+    /* ======MENU DETAILS START====== */
+    .wsus__menu_details_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__menu_details_text .rating {
+        margin: 12px 0px 17px 0px;
+    }
+
+    .wsus__about_choose_text ul li {
+        font-size: 14px;
+    }
+
+    /* ======MENU DETAILS END====== */
+
+    .wsus__single_payment {
+        height: 80px;
+    }
+
+    .wsus__download2 .wsus__download_img {
+        height: 380px;
+    }
+
+    .wsus__testimonial_product2 {
+        width: 120px;
+        height: 120px;
+    }
+
+    .wsus__testimonial_text2 {
+        max-width: 63%;
+        padding-left: 15px;
+        margin-left: 15px;
+    }
+
+    .wsus__subscribe_text h3 {
+        font-size: 28px;
+    }
+
+    .latest_post li .text {
+        width: 68%;
+    }
+
+    .wsus__terms_condition h3 {
+        font-size: 26px;
+    }
 }
 
 
@@ -510,6 +598,10 @@
         padding-bottom: 45px !important;
     }
 
+    .footer2 .footer_overlay {
+        padding-bottom: 0 !important;
+    }
+
     .wsus__footer_bottom_text p {
         text-align: center;
         width: 100%;
@@ -620,7 +712,7 @@
     }
 
     .wsus__blog_det_slider_item {
-        height: 200px;
+        height: 160px;
     }
 
     /* ======BLOG DETAILS END====== */
@@ -646,6 +738,234 @@
     /* ======CONTACT END====== */
 
 
+    /* ======DASHBOARD START====== */
+    .wsus__dashboard_area {
+        border: none;
+    }
+
+    .wsus__dashboard_content {
+        padding: 0;
+    }
+
+    .wsus_dash_personal_info {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .wsus_dashboard_body h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .wsus_dash_personal_info h4 {
+        font-size: 16px;
+    }
+
+    .wsus_dash_personal_info p {
+        flex-wrap: wrap;
+    }
+
+    .wsus_dash_personal_info.show .wsus_dash_personal_info_edit {
+        margin: 0;
+    }
+
+    .wsus_dashboard_order table {
+        border-radius: 0;
+    }
+
+    .wsus_dashboard_order table tr th,
+    .wsus_dashboard_order table tr td {
+        width: 140px;
+    }
+
+    .wsus_dashboard_body .wsus__invoice {
+        border-radius: 0px;
+        padding: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .wsus__invoice_header .header_address {
+        max-width: 40%;
+    }
+
+    .wsus__invoice_header {
+        margin-top: 15px;
+    }
+
+    .wsus__invoice .sl_no {
+        min-width: 80px;
+    }
+
+    .wsus__invoice .package {
+        min-width: 180px;
+    }
+
+    .wsus__invoice .price,
+    .wsus__invoice .qnty,
+    .wsus__invoice .total {
+        min-width: 100px;
+    }
+
+    .wsus__invoice_header .header_address h4 {
+        font-size: 18px;
+    }
+
+    .wsus__single_comm_text .rating {
+        margin-top: 10px;
+    }
+
+    /* ======DASHBOARD END====== */
+
+
+    .wsus__faq_img {
+        margin-top: 25px;
+    }
+
+    /* ======MENU DETAILS START====== */
+    .wsus__menu_details_images {
+        height: 516px;
+    }
+
+    .wsus__menu_details_text {
+        margin-top: 25px;
+    }
+
+    .wsus__menu_details_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__menu_details_text .rating {
+        margin: 12px 0px 15px 0px;
+    }
+
+    .wsus__menu_details_text .price {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .wsus__menu_description_area .nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+
+    .menu_det_description ul li {
+        width: 100%;
+    }
+
+    .wsus__post_review {
+        margin-top: 25px;
+    }
+
+    .menu_det_adition_info ul li {
+        width: 48% !important;
+    }
+
+    .menu_det_description ul li::after {
+        top: 7px;
+    }
+
+    .wsus__related_menu h2 {
+        font-size: 22px;
+    }
+
+    /* ======MENU DETAILS END====== */
+
+    .wsus__single_payment {
+        height: 80px;
+    }
+
+    /* ======404 start====== */
+
+    .wsus__404_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__404_text img {
+        height: 220px !important;
+        width: 360px !important;
+    }
+
+    /* ======404 END====== */
+
+    .wsus__terms_condition h3 {
+        font-size: 22px;
+    }
+
+    /* ======HOME 2 START====== */
+    .wsus__banner_text2 {
+        padding-bottom: 0 !important;
+    }
+
+    .home_2 .main_menu .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__menu2 .menu_filter button {
+        padding: 5px 20px;
+    }
+
+    .wsus__single_team_text2 h4 {
+        font-size: 20px;
+    }
+
+    .wsus__download2 .wsus__download_img {
+        height: 380px !important;
+        margin-bottom: 25px;
+    }
+
+    .wsus__single_testimonial2 {
+        padding: 25px;
+    }
+
+    .wsus__testimonial_text2 h4 {
+        font-size: 16px;
+    }
+
+    .latest_post li .text {
+        width: 85% !important;
+    }
+
+    .wsus__testimonial2 .nextArrow,
+    .wsus__testimonial2 .prevArrow {
+        right: 0px;
+    }
+
+    .wsus__testimonial2 .prevArrow {
+        left: 0;
+    }
+
+    .wsus__subscribe_text h3 {
+        font-size: 25px;
+    }
+
+    .subscribe_form {
+        margin-top: 15px;
+    }
+
+    .latest_post li .text {
+        width: 68%;
+    }
+
+    .footer2 .wsus__footer_bottom {
+        margin-top: 50px !important;
+    }
+
+    .wsus__footer_social_link {
+        width: 100%;
+    }
+
+    .wsus__blog2 .wsus__blog_overlay {
+        padding: 65px 0px 65px 0px !important;
+    }
+
+    .wsus__menu2 .wsus__menu_item img {
+        height: 250px !important;
+    }
+
+    /* ======HOME 2 END====== */
+
 }
 
 
@@ -665,7 +985,7 @@
     }
 
     .wsus__topbar_info li {
-        margin: 0px 5px !important;
+        margin: 0px 15px !important;
     }
 
     .wsus__topbar_info li a {
@@ -1033,6 +1353,10 @@
         padding-bottom: 18px !important;
     }
 
+    .footer2 .footer_overlay {
+        padding-bottom: 0 !important;
+    }
+
     .wsus__footer_bottom_text p {
         text-align: center;
         width: 100%;
@@ -1218,6 +1542,280 @@
 
     /* ======CONTACT END====== */
 
+
+    /* ======DASHBOARD START====== */
+    .wsus__dashboard_area {
+        border: none;
+    }
+
+    .wsus__dashboard_content {
+        padding: 0;
+    }
+
+    .wsus_dash_personal_info {
+        border-radius: 0;
+        margin: 0;
+    }
+
+    .wsus_dashboard_body h3 {
+        font-size: 20px;
+        margin-top: 25px;
+    }
+
+    .wsus_dash_personal_info h4 {
+        font-size: 16px;
+    }
+
+    .wsus_dash_personal_info p {
+        flex-wrap: wrap;
+    }
+
+    .wsus_dash_personal_info.show .wsus_dash_personal_info_edit {
+        margin: 0;
+    }
+
+    .wsus_dashboard_order table {
+        border-radius: 0;
+    }
+
+    .wsus_dashboard_order table tr th,
+    .wsus_dashboard_order table tr td {
+        width: 140px;
+    }
+
+    .wsus_dashboard_body .wsus__invoice {
+        border-radius: 0px;
+        padding: 15px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+    }
+
+    .wsus__invoice_header .header_address {
+        max-width: 40%;
+    }
+
+    .wsus__invoice_header {
+        margin-top: 15px;
+    }
+
+    .wsus__invoice .sl_no {
+        min-width: 80px;
+    }
+
+    .wsus__invoice .package {
+        min-width: 180px;
+    }
+
+    .wsus__invoice .price,
+    .wsus__invoice .qnty,
+    .wsus__invoice .total {
+        min-width: 100px;
+    }
+
+    .wsus__invoice_header .header_address h4 {
+        font-size: 18px;
+    }
+
+    .wsus__single_comm_text .rating {
+        margin-top: 10px;
+    }
+
+    /* ======DASHBOARD END====== */
+
+
+    /* ======FAQs START====== */
+    .wsus__faq_img {
+        height: 400px;
+        margin-top: 25px;
+    }
+
+    /* ======FAQs END====== */
+
+
+    /* ======LOGIN START====== */
+    .wsus__login_area {
+        padding: 30px;
+    }
+
+    .wsus__login_area h2 {
+        font-size: 30px;
+    }
+
+    /* ======LOGIN END====== */
+
+
+    /* ======MENU DETAILS START====== */
+    .wsus__menu_details_images {
+        height: 516px;
+    }
+
+    .wsus__menu_details_text {
+        margin-top: 25px;
+    }
+
+    .wsus__menu_details_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__menu_details_text .rating {
+        margin: 12px 0px 15px 0px;
+    }
+
+    .wsus__menu_details_text .price {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .wsus__menu_description_area .nav .nav-item .nav-link {
+        font-size: 14px;
+    }
+
+    .menu_det_description ul li {
+        width: 100%;
+    }
+
+    .wsus__post_review {
+        margin-top: 25px;
+    }
+
+    .menu_det_adition_info ul li {
+        width: 48% !important;
+    }
+
+    .menu_det_description ul li::after {
+        top: 7px;
+    }
+
+    .wsus__related_menu h2 {
+        font-size: 22px;
+    }
+
+    /* ======MENU DETAILS END====== */
+
+    .wsus__single_payment {
+        height: 85px;
+    }
+
+    .wsus__terms_condition h3 {
+        font-size: 25px;
+    }
+
+    /* ======404 start====== */
+    .wsus__404_text img {
+        height: 270px !important;
+    }
+
+    .wsus__404 div {
+        height: auto;
+    }
+
+    .wsus__404_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__404 {
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    /* ======404 END====== */
+
+    .wsus__blog_page .wsus__single_blog {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    /* ======HOME 2 START====== */
+    .wsus__banner_text2 {
+        padding-bottom: 0 !important;
+    }
+
+    .wsus__banner2 .prevArrow,
+    .wsus__banner2 .nextArrow {
+        display: none !important;
+    }
+
+    .home_2 .main_menu .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__menu2 .menu_filter button {
+        padding: 5px 20px;
+    }
+
+    .wsus__single_team_text2 h4 {
+        font-size: 20px;
+    }
+
+    .wsus__download2 .wsus__download_img {
+        height: 440px !important;
+        margin-bottom: 25px;
+    }
+
+    .wsus__single_testimonial2 {
+        padding: 25px;
+    }
+
+    .wsus__blog2 .wsus__single_blog_img {
+        height: 200px;
+    }
+
+    .wsus__testimonial_text2 h4 {
+        font-size: 16px;
+    }
+
+    .latest_post li .text {
+        width: 80% !important;
+    }
+
+    .wsus__testimonial2 .nextArrow,
+    .wsus__testimonial2 .prevArrow {
+        right: 0px;
+    }
+
+    .wsus__testimonial2 .prevArrow {
+        left: 0;
+    }
+
+    .wsus__subscribe_text h3 {
+        font-size: 25px;
+    }
+
+    .subscribe_form {
+        margin-top: 15px;
+    }
+
+    .latest_post li .text {
+        width: 68%;
+    }
+
+    .footer2 .wsus__footer_bottom {
+        margin-top: 20px !important;
+    }
+
+    .wsus__footer_social_link {
+        width: 100%;
+    }
+
+    .wsus__brand2 .wsus__brand_overlay {
+        padding: 30px 0px !important;
+    }
+
+    .wsus__blog2 .wsus__blog_overlay {
+        padding: 65px 0px 65px 0px !important;
+    }
+
+    .wsus__menu2 .wsus__menu_item img {
+        height: 180px !important;
+    }
+
+    .wsus__single_team_img2 {
+        height: 200px;
+    }
+
+    /* ======HOME 2 END====== */
 
 }
 
@@ -1683,14 +2281,21 @@
         right: -25px;
     }
 
+    .wsus__breadcrumb_text ul li a {
+        font-size: 14px;
+    }
+
+    .wsus__breadcrumb_text ul li:first-child a::before {
+        font-size: 14px;
+    }
+
     /* footer end */
     /* ======HOME PAGE END====== */
 
 
-
     /* ======ABOUT PAGE START====== */
     .wsus__breadcrumb_text h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .wsus__breadcrumb_overlay {
@@ -1742,7 +2347,6 @@
     }
 
     /* ======ABOUT PAGE END====== */
-
 
 
     /* ======BLOG DETAILS START====== */
@@ -1872,7 +2476,6 @@
 
     /* ======BLOG DETAILS END====== */
 
-
     .wsus__cart_list {
         margin-bottom: 25px;
     }
@@ -1888,7 +2491,6 @@
         line-height: 30px !important;
         font-size: 14px !important;
     }
-
 
     /* ======CONTACT START====== */
     .wsus__contact_form {
@@ -1993,12 +2595,215 @@
         width: 100%;
     }
 
-
-
-
     /* ======DASHBOARD END====== */
 
 
+    /* ======FAQs START====== */
+    .wsus__faq_img {
+        height: 250px;
+        margin-top: 25px;
+    }
+
+    /* ======FAQs END====== */
 
 
+    /* ======LOGIN START====== */
+    .wsus__login_area {
+        padding: 20px;
+    }
+
+    .wsus__login_area h2 {
+        font-size: 25px;
+    }
+
+    /* ======LOGIN END====== */
+
+
+    /* ======MENU DETAILS START====== */
+    .wsus__menu_details_images {
+        padding: 20px;
+        height: 300px;
+    }
+
+    .wsus__menu_details_text {
+        margin-top: 25px;
+    }
+
+    .wsus__menu_details_text h2 {
+        font-size: 25px;
+    }
+
+    .wsus__menu_details_text .rating {
+        margin: 12px 0px 15px 0px;
+    }
+
+    .wsus__menu_details_text .price {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .details_button_area li a {
+        margin-right: 10px;
+    }
+
+    .wsus__menu_description_area .nav .nav-item {
+        width: 100%;
+        border-right: 0;
+        border-bottom: 1px solid var(--colorPrimary);
+    }
+
+    .menu_det_description ul li {
+        width: 100%;
+    }
+
+    .wsus__post_review {
+        margin-top: 25px;
+    }
+
+    .menu_det_description ul li::after {
+        top: 7px;
+    }
+
+    .wsus__related_menu h2 {
+        font-size: 22px;
+    }
+
+    /* ======MENU DETAILS END====== */
+
+    .wsus__single_payment {
+        height: 80px;
+    }
+
+    .wsus__terms_condition h3 {
+        font-size: 20px;
+    }
+
+    /* ======404 start====== */
+    .wsus__404_text img {
+        height: 180px !important;
+    }
+
+    .wsus__404 div {
+        height: auto;
+    }
+
+    .wsus__404_text h2 {
+        font-size: 30px;
+    }
+
+    .wsus__404 {
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    /* ======404 END====== */
+
+    .wsus__blog_page .wsus__single_blog {
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+
+    /* ======HOME 2 START====== */
+    .wsus__banner_text2 {
+        padding-bottom: 0 !important;
+    }
+
+    .wsus__banner2 .prevArrow,
+    .wsus__banner2 .nextArrow {
+        display: none !important;
+    }
+
+    .home_2 .main_menu .navbar-nav .nav-item .nav-link {
+        color: var(--colorBlack);
+    }
+
+    .wsus__menu2 .menu_filter button {
+        padding: 5px 20px;
+    }
+
+    .wsus__single_team_text2 h4 {
+        font-size: 20px;
+    }
+
+    .wsus__download2 .wsus__download_img {
+        height: 220px !important;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .wsus__single_testimonial2 {
+        padding: 25px;
+    }
+
+    .wsus__testimonial_product2 {
+        display: none;
+    }
+
+    .wsus__testimonial_text2 {
+        min-width: 100%;
+        padding-left: 0;
+        margin-left: 0;
+        border-left: 0;
+        text-align: center;
+    }
+
+    .wsus__testimonial_text2 .rating {
+        text-align: center;
+    }
+
+    .wsus__testimonial_text2 h4 {
+        font-size: 16px;
+    }
+
+    .wsus__testimonial_text2 .client_img {
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .wsus__testimonial2 .nextArrow,
+    .wsus__testimonial2 .prevArrow {
+        right: 0px;
+    }
+
+    .wsus__testimonial2 .prevArrow {
+        left: 0;
+    }
+
+    .wsus__subscribe_text h3 {
+        font-size: 25px;
+    }
+
+    .subscribe_form {
+        margin-top: 15px;
+    }
+
+    .latest_post li .text a {
+        font-size: 16px;
+    }
+
+    .latest_post li .text {
+        width: 68%;
+    }
+
+    .footer2 .wsus__footer_bottom {
+        margin-top: 20px !important;
+    }
+
+    .footer2 .footer_overlay {
+        padding-bottom: 0 !important;
+    }
+
+    .wsus__footer_social_link {
+        width: 100%;
+    }
+
+    .wsus__brand2 .wsus__brand_overlay {
+        padding: 30px 0px !important;
+    }
+
+    .wsus__blog2 .wsus__blog_overlay {
+        padding: 65px 0px 65px 0px !important;
+    }
+
+    /* ======HOME 2 END====== */
 }
