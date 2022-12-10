@@ -197,6 +197,11 @@ button {
     padding: 0px 60px;
 }
 
+.form-check-input:focus {
+    border-color: #eb002975;
+    box-shadow: none;
+}
+
 /*============================
     COMMON CSS END
 ============================*/
@@ -666,7 +671,7 @@ button {
 }
 
 .wsus__menu_cart_area ul {
-    max-height: 400px;
+    max-height: 450px;
     overflow: hidden;
     overflow-y: auto;
 }
@@ -686,7 +691,6 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
     position: relative;
     border: 1px solid #eee;
     padding: 10px;
@@ -712,10 +716,10 @@ button {
 }
 
 .wsus__menu_cart_area ul li .menu_cart_text .title {
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--headingFont);
     text-transform: capitalize;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--colorBlack);
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -728,9 +732,38 @@ button {
     -o-transition: all linear .3s;
 }
 
+.wsus__menu_cart_area ul li .menu_cart_text .size {
+    text-transform: capitalize;
+    color: var(--colorPrimary);
+}
+
+.wsus__menu_cart_area ul li .menu_cart_text .extra {
+    text-transform: capitalize;
+    display: block;
+    padding-left: 10px;
+    position: relative;
+}
+
+.wsus__menu_cart_area ul li .menu_cart_text .extra::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: var(--paraColor);
+    border-radius: 50%;
+    top: 10px;
+    left: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
 .wsus__menu_cart_area ul li .menu_cart_text .price {
     color: var(--colorPrimary);
     font-size: 18px;
+    font-weight: 600;
+    margin-top: 3px;
 }
 
 .wsus__menu_cart_area ul li .menu_cart_text .price del {
@@ -774,14 +807,14 @@ button {
     align-items: center;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--colorBlack);
     margin: 20px 0px 20px 0px;
 }
 
 .wsus__menu_cart_area .subtotal span {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 800;
     color: var(--colorBlack);
 }
 
@@ -3696,11 +3729,13 @@ footer {
 }
 
 .details_size,
+.details_extra_item,
 .details_quentity {
     margin-bottom: 30px;
 }
 
 .details_size h5,
+.details_extra_item h5,
 .details_quentity h5 {
     text-transform: capitalize;
     font-size: 18px;
@@ -3733,6 +3768,41 @@ footer {
     background: var(--gradiantHoverBg);
     color: var(--colorWhite);
 }
+
+
+.details_extra_item {}
+
+.details_extra_item h5 span {
+    text-transform: capitalize;
+}
+
+.details_extra_item .form-check {
+    margin-bottom: 10px;
+}
+
+.details_extra_item .form-check input {
+    padding: 0;
+    border-radius: 2px;
+}
+
+.details_extra_item .form-check input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.details_extra_item .form-check label {
+    text-transform: capitalize;
+    color: var(--colorBlack);
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 23%;
+}
+
+
+
 
 .quentity_btn {
     display: flex;

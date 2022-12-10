@@ -57,6 +57,10 @@
         width: 73%;
     }
 
+    .details_extra_item .form-check label {
+        max-width: 30%;
+    }
+
 }
 
 
@@ -296,6 +300,10 @@
 
     .wsus__terms_condition h3 {
         font-size: 26px;
+    }
+
+    .details_extra_item .form-check label {
+        max-width: 35%;
     }
 
 }
@@ -976,6 +984,10 @@
     }
 
     /* ======HOME 2 END====== */
+
+    .details_extra_item .form-check label {
+        max-width: 30%;
+    }
 
 }
 
@@ -1828,10 +1840,11 @@
 
     /* ======HOME 2 END====== */
 
+    .details_extra_item .form-check label {
+        max-width: 35%;
+    }
+
 }
-
-
-
 
 
 @media (max-width: 575.99px) {
@@ -2822,4 +2835,9 @@
     }
 
     /* ======HOME 2 END====== */
+
+    .details_extra_item .form-check label {
+        max-width: 80%;
+    }
+
 }
