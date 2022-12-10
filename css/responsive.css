@@ -297,6 +297,7 @@
     .wsus__terms_condition h3 {
         font-size: 26px;
     }
+
 }
 
 
@@ -964,6 +965,16 @@
         height: 250px !important;
     }
 
+    .wsus__offer_item2 .wsus__offer_item_single .img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .wsus__banner2 .prevArrow,
+    .wsus__banner2 .nextArrow {
+        display: none !important;
+    }
+
     /* ======HOME 2 END====== */
 
 }
@@ -1419,7 +1430,7 @@
 
     /* ======BLOG DETAILS START====== */
     .wsus__blog_details_img {
-        height: 250px;
+        height: 300px;
     }
 
     .wsus__blog_details_text h1,
@@ -2803,6 +2814,11 @@
 
     .wsus__blog2 .wsus__blog_overlay {
         padding: 65px 0px 65px 0px !important;
+    }
+
+    .wsus__offer_item2 .wsus__offer_item_single .img {
+        width: 100px;
+        height: 100px;
     }
 
     /* ======HOME 2 END====== */
