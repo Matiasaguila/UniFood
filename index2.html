@@ -436,9 +436,10 @@
                             <a class="title" href="menu_details.html">Dal Makhani Paneer</a>
                             <p>Lightly smoked and minced pork</p>
                             <ul class="d-flex flex-wrap">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -451,9 +452,10 @@
                             <a class="title" href="menu_details.html">Hyderabadi biryani</a>
                             <p>Lightly smoked and minced pork</p>
                             <ul class="d-flex flex-wrap">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -466,9 +468,10 @@
                             <a class="title" href="menu_details.html">Beef Masala Salad</a>
                             <p>Lightly smoked and minced pork</p>
                             <ul class="d-flex flex-wrap">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -481,9 +484,10 @@
                             <a class="title" href="menu_details.html">Indian cuisine Pakora</a>
                             <p>Lightly smoked and minced pork</p>
                             <ul class="d-flex flex-wrap">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -491,6 +495,91 @@
             </div>
         </div>
     </section>
+
+    <!-- CART POPUT START -->
+    <div class="wsus__cart_popup">
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                                class="fal fa-times"></i></button>
+                        <div class="wsus__cart_popup_img">
+                            <img src="images/menu1.png" alt="menu" class="img-fluid w-100">
+                        </div>
+                        <div class="wsus__cart_popup_text">
+                            <h2>Maxican Pizza Test Better</h2>
+                            <p class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <i class="far fa-star"></i>
+                                <span>(201)</span>
+                            </p>
+                            <h4 class="price">$320.00 <del>$350.00</del> </h4>
+
+                            <div class="details_size">
+                                <h5>select size</h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="large"
+                                        checked>
+                                    <label class="form-check-label" for="large">
+                                        large <span>+ $350</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="medium">
+                                    <label class="form-check-label" for="medium">
+                                        medium <span>+ $250</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="small">
+                                    <label class="form-check-label" for="small">
+                                        small <span>+ $150</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="details_extra_item">
+                                <h5>select option <span>(optional)</span></h5>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="coca-cola">
+                                    <label class="form-check-label" for="coca-cola">
+                                        coca-cola <span>+ $10</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="7up">
+                                    <label class="form-check-label" for="7up">
+                                        7up <span>+ $15</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="details_quentity">
+                                <h5>select quentity</h5>
+                                <div class="quentity_btn_area d-flex flex-wrapa align-items-center">
+                                    <div class="quentity_btn">
+                                        <button class="btn btn-danger"><i class="fal fa-minus"></i></button>
+                                        <input type="text" placeholder="1">
+                                        <button class="btn btn-success"><i class="fal fa-plus"></i></button>
+                                    </div>
+                                    <h3>$320.00</h3>
+                                </div>
+                            </div>
+                            <ul class="details_button_area d-flex flex-wrap">
+                                <li><a class="common_btn" href="#">add to cart</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CART POPUT END -->
+
     <!--=============================
         OFFER 2 ITEM END
     ==============================-->
@@ -542,9 +631,10 @@
                             <a class="title" href="menu_details.html">Hyderabadi biryani</a>
                             <h5 class="price">$70.00 <del>$90.00</del></h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -565,9 +655,10 @@
                             <a class="title" href="menu_details.html">Chicken Masala</a>
                             <h5 class="price">$60.00 <del>$80.00</del></h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -588,9 +679,10 @@
                             <a class="title" href="menu_details.html">Daria Shevtsova </a>
                             <h5 class="price">$70.00</h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -611,9 +703,10 @@
                             <a class="title" href="menu_details.html">Chicken Masala</a>
                             <h5 class="price">$90.00</h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -634,9 +727,10 @@
                             <a class="title" href="menu_details.html">Chicken Masala </a>
                             <h5 class="price">$110.00 <del>$120.00</del></h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -657,9 +751,10 @@
                             <a class="title" href="menu_details.html">Hyderabadi biryani</a>
                             <h5 class="price">$99.00</h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -680,9 +775,10 @@
                             <a class="title" href="menu_details.html">Daria Shevtsova</a>
                             <h5 class="price">$80.00</h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -703,9 +799,10 @@
                             <a class="title" href="menu_details.html">Hyderabadi biryani</a>
                             <h5 class="price">$70.00 <del>$110.00</del></h5>
                             <ul class="d-flex flex-wrap justify-content-center">
-                                <li><a href="#"><i class="fas fa-shopping-basket"></i></a></li>
+                                <li><a href="#" data-bs-toggle="modal" data-bs-target="#cartModal"><i
+                                            class="fas fa-shopping-basket"></i></a></li>
                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -1362,7 +1459,7 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="wsus__footer_bottom_text d-flex flex-wrap justify-content-between">
-                                <p>Copyright 2022 <b>WebsolutionUS</b> All Rights Reserved.</p>
+                                <p>Copyright 2022 <b>UniFood</b> All Rights Reserved.</p>
                                 <div class="wsus__footer_social_link">
                                     <ul class="d-flex flex-wrap">
                                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
