@@ -89,21 +89,18 @@ button {
     --boxShadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     --gradiantBg: rgb(156, 3, 30)linear-gradient(0deg, rgba(156, 3, 30, 1) 0%, rgba(235, 0, 41, 1) 100%);
     --gradiantHoverBg: rgb(235, 0, 41)linear-gradient(0deg, rgba(235, 0, 41, 1) 0%, rgba(156, 3, 30, 1) 100%);
-
-
 }
 
 /*============================
     COMMON CSS START
 ============================*/
 .common_btn {
-    background: rgb(156, 3, 30);
     background: var(--gradiantBg);
     text-transform: capitalize !important;
     color: var(--colorWhite) !important;
     padding: 10px 60px 10px 25px !important;
     border-radius: 30px;
-    font-size: 16px !important;
+    font-size: 15px !important;
     font-weight: 600 !important;
     position: relative;
     transition: all linear .3s;
@@ -819,7 +816,6 @@ button {
     color: var(--colorBlack);
 }
 
-
 .wsus__menu_cart_area .checkout,
 .wsus__menu_cart_area .cart_view {
     display: block;
@@ -1352,21 +1348,7 @@ button {
     opacity: 1;
 }
 
-
-
-
-
 /* CART POPUT START */
-.wsus__cart_popup {}
-
-.wsus__cart_popup .modal {}
-
-.wsus__cart_popup .modal-dialog {}
-
-.wsus__cart_popup .modal-content {}
-
-.wsus__cart_popup .modal-body {}
-
 .wsus__cart_popup .btn-close {
     position: absolute;
     top: 10px;
@@ -1401,13 +1383,25 @@ button {
     margin: 0 auto;
 }
 
-.wsus__cart_popup_text h2 {
+.wsus__cart_popup_text .title {
     font-size: 27px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: capitalize;
     margin-top: 20px;
     border-top: 1px solid #eee;
     padding-top: 15px;
+    font-family: var(--headingFont);
+    color: var(--colorBlack);
+    display: block;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__cart_popup_text .title:hover {
+    color: var(--colorPrimary);
 }
 
 .wsus__cart_popup_text .rating {
@@ -1438,23 +1432,10 @@ button {
     margin-left: 10px;
 }
 
-.wsus__cart_popup_text .details_quentity h5 {}
-
-
-
 /* CART POPUT END */
-
-
-
-
-
-
-
-
 /*============================
     OFFER ITEM END
 ============================*/
-
 
 
 /*============================
@@ -2014,7 +1995,6 @@ button {
 ============================*/
 
 
-
 /*============================
     TESTIMONIAL START
 ============================*/
@@ -2265,11 +2245,9 @@ button {
 
 .wsus__single_brand {
     position: relative;
-    /* box-shadow: var(--boxShadow); */
     margin: 5px 12px 0px 12px;
     border-radius: 5px;
     height: 105px;
-    /* background: #ffffff26; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -2522,7 +2500,6 @@ footer {
     color: var(--colorBlack);
 }
 
-
 /* SCROLL BUTTON START */
 .wsus__scroll_btn {
     position: fixed;
@@ -2560,13 +2537,9 @@ footer {
 }
 
 /* SCROLL BUTTON END */
-
 /*============================
     FOOTER END
 ============================*/
-
-
-
 
 
 /*============================
@@ -3236,9 +3209,7 @@ footer {
 }
 
 .wsus__blog_quot_text p span {
-    /* font-size: 20px; */
     position: absolute;
-    /* transform: rotateY(180deg); */
     margin-left: 20px;
     width: 35px;
 }
@@ -3734,33 +3705,6 @@ footer {
     border-radius: 10px;
     background: #faf6f3fa;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .wsus__menu_details_text h2 {
     font-size: 40px;
@@ -4330,8 +4274,6 @@ footer {
 }
 
 .wsus__cart_list_footer_button form {
-    /* display: flex; */
-    /* justify-content: space-between; */
     margin-top: 15px;
     position: relative;
     border: 1px solid var(--colorPrimary);
@@ -4351,8 +4293,6 @@ footer {
 .wsus__cart_list_footer_button button {
     text-transform: capitalize;
     margin-left: 10px;
-    /* width: 40px; */
-    /* height: 40px; */
     padding: 8px 20px;
     text-align: center;
     border-radius: 3px;
@@ -4424,7 +4364,7 @@ footer {
 }
 
 /*======================
-  CART VIEW PAGE END
+CART VIEW PAGE END
 ========================*/
 
 
@@ -4511,6 +4451,7 @@ CHECKOUT PAGE START
     border-radius: 5px;
     margin-bottom: 20px;
     background: #faf6f3;
+    position: relative;
 }
 
 .wsus__checkout_single_address .form-check input {
@@ -4560,14 +4501,41 @@ CHECKOUT PAGE START
     margin-bottom: 20px;
 }
 
+.wsus__checkout_single_address ul {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.wsus__checkout_single_address ul li a {
+    width: 25px;
+    height: 25px;
+    line-height: 23px;
+    background: var(--colorWhite);
+    color: var(--colorPrimary);
+    border: 1px solid var(--colorPrimary);
+    font-size: 12px;
+    text-align: center;
+    margin: 3px;
+    border-radius: 2px;
+    transition: all linear .3s;
+    cursor: pointer;
+}
+
+.wsus__checkout_single_address ul li a:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+}
+
 /*======================
   CHECKOUT PAGE END
 ========================*/
 
 
-/* ==================================
+/*========================
     SIGNIN START
-=================================== */
+=========================*/
 .wsus__signin,
 .wsus__signup {
     background-repeat: no-repeat !important;
@@ -4921,7 +4889,6 @@ CHECKOUT PAGE START
 ============================*/
 
 
-
 /* =================================
     TERMS AND CONDITION START
 ================================= */
@@ -4995,7 +4962,6 @@ CHECKOUT PAGE START
 ================================= */
 
 
-
 /*============================
     404 page START
 ============================*/
@@ -5053,10 +5019,9 @@ CHECKOUT PAGE START
 ============================*/
 
 
-
-/* ==================================
+/* ===========================
     DASHBOARD START
-=================================== */
+============================== */
 .wsus__dashboard_area {
     border: 1px solid rgb(233, 242, 255);
     border-radius: 5px;
@@ -5073,15 +5038,43 @@ CHECKOUT PAGE START
     margin-bottom: 20px;
     padding: 30px 0px;
     text-align: center;
-    /* border-bottom: 3px solid var(--colorWhite); */
 }
 
-.dasboard_header img {
+.dasboard_header .dasboard_header_img {
     border-radius: 50%;
     border: 5px solid var(--colorWhite);
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 140px !important;
-    height: 140px !important;
+    box-shadow: var(--boxShadow);
+    width: 140px;
+    height: 140px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.dasboard_header .dasboard_header_img label {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    font-size: 14px;
+    /* border: 1px solid #ddd; */
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    background: var(--colorWhite);
+    box-shadow: var(--boxShadow);
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.dasboard_header .dasboard_header_img label:hover {
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
 }
 
 .dasboard_header h2 {
@@ -5132,7 +5125,7 @@ CHECKOUT PAGE START
 
 .nav-pills .nav-link.active,
 .nav-pills .nav-link:hover {
-    background: #292b7517 !important;
+    background: #292b750a !important;
 }
 
 .wsus__dashboard_menu button.active::after {
@@ -5161,13 +5154,92 @@ CHECKOUT PAGE START
     color: var(--colorBlack);
     text-transform: capitalize;
     margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wsus_dashboard_body h3 .dash_add_new_address {
+    border-radius: 30px;
+    padding: 8px 15px;
+    background: var(--gradiantBg);
+    color: var(--colorWhite) !important;
+    cursor: pointer;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus_dashboard_body h3 .dash_add_new_address:hover {
+    background: var(--gradiantHoverBg);
+}
+
+.wsus__dsahboard_overview_item {
+    background: #faf6f3fa;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    border: 1px solid #eee;
+    margin-bottom: 25px;
+}
+
+.wsus__dsahboard_overview_item .icon {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: orange;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--colorWhite);
+}
+
+.wsus__dsahboard_overview_item h4 {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    color: orange;
+    margin-top: 20px;
+    font-family: var(--paraFont);
+}
+
+.wsus__dsahboard_overview_item h4 span {
+    font-size: 18px;
+    font-weight: 600;
+    color: orange;
+    font-family: var(--paraFont);
+    margin-left: 5px;
+}
+
+.wsus__dsahboard_overview_item.red .icon {
+    background: var(--colorPrimary);
+}
+
+.wsus__dsahboard_overview_item.red h4,
+.wsus__dsahboard_overview_item.red h4 span {
+    color: var(--colorPrimary);
+}
+
+.wsus__dsahboard_overview_item.green .icon {
+    background: #4caf50;
+}
+
+.wsus__dsahboard_overview_item.green h4,
+.wsus__dsahboard_overview_item.green h4 span {
+    color: #4caf50;
 }
 
 .wsus_dash_personal_info {
     background: #faf6f3fa;
     border-radius: 5px;
     padding: 30px;
-    margin-top: 30px;
 }
 
 .wsus_dash_personal_info h4 {
@@ -5183,12 +5255,11 @@ CHECKOUT PAGE START
 
 .wsus_dash_personal_info h4 a {
     font-size: 14px;
-    background: var(--colorPrimary);
+    background: var(--gradiantBg);
     color: var(--colorWhite);
     font-weight: 600;
     padding: 4px 15px;
     border-radius: 30px;
-    border: 1px solid transparent;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -5202,13 +5273,7 @@ CHECKOUT PAGE START
 }
 
 .wsus_dash_personal_info h4 a:hover {
-    background: var(--colorWhite);
-    color: var(--colorPrimary);
-    border-color: var(--colorPrimary);
-}
-
-.wsus_dash_personal_info h4 a:hover span {
-    color: var(--colorPrimary);
+    background: var(--gradiantHoverBg);
 }
 
 .wsus_dash_personal_info h4 a .cancel {
@@ -5230,27 +5295,97 @@ CHECKOUT PAGE START
     color: var(--colorBlack);
 }
 
-.info_modal .modal-dialog {
-    left: 43% !important;
+.wsus_dashboard_new_address,
+.wsus_dashboard_edit_address {
+    background: #faf6f3fa;
+    border-radius: 5px;
+    padding: 30px;
+    display: none;
 }
 
-.info_modal .modal-content {
-    width: 700px !important;
-    background: rgb(233, 247, 250);
-    position: absolute;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
+.wsus_dashboard_new_address h4,
+.wsus_dashboard_edit_address h4 {
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
-.info_modal .comment_input {
-    background: none;
+.wsus_dashboard_new_address .wsus__check_single_form,
+.wsus_dashboard_edit_address .wsus__check_single_form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wsus_dashboard_new_address .check_area,
+.wsus_dashboard_edit_address .check_area {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.wsus_dashboard_new_address .form-check,
+.wsus_dashboard_edit_address .form-check {
+    margin-right: 20px;
+    background: var(--colorWhite);
+    border: 1px solid #ddd;
+    padding: 10px 30px 10px 40px;
+    border-radius: 5px;
+}
+
+.wsus_dashboard_new_address .form-check label,
+.wsus_dashboard_edit_address .form-check label {
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--colorBlack);
+    display: block;
+    width: 100%;
+}
+
+.wsus_dashboard_new_address .form-check input,
+.wsus_dashboard_edit_address .form-check input {
     padding: 0;
-    text-align: left;
+}
+
+.wsus_dashboard_new_address .form-check input:checked,
+.wsus_dashboard_edit_address .form-check input:checked {
+    background-color: var(--colorPrimary);
+    border-color: var(--colorPrimary);
+}
+
+.wsus_dashboard_new_address button,
+.wsus_dashboard_edit_address button {
+    padding: 8px 20px !important;
+}
+
+.wsus_dashboard_new_address button::after,
+.wsus_dashboard_new_address button::before,
+.wsus_dashboard_edit_address button::after,
+.wsus_dashboard_edit_address button::before {
+    display: none;
+}
+
+.address_body.show_new_address .wsus_dashboard_existing_address {
+    display: none;
+}
+
+.address_body.show_new_address .wsus_dashboard_new_address {
+    display: block;
+}
+
+.address_body.show_new_address .dash_add_new_address,
+.address_body.show_edit_address .dash_add_new_address {
+    display: none;
+}
+
+.address_body.show_edit_address .wsus_dashboard_existing_address {
+    display: none;
+}
+
+.address_body.show_edit_address .wsus_dashboard_edit_address {
+    display: block;
 }
 
 .wsus_dashboard_order table {
@@ -5335,6 +5470,10 @@ CHECKOUT PAGE START
 .wsus_dashboard_order table tr td .active {
     background: #292b751c;
     color: var(--colorPrimary);
+}
+
+.wsus_dashboard_body .wsus__dashoard_wishlist {
+    margin-top: -20px;
 }
 
 .dashboard_review .wsus__single_review {
@@ -5439,8 +5578,8 @@ CHECKOUT PAGE START
 
 .wsus__invoice .go_back {
     background: var(--gradiantBg);
-    border-radius: 5px;
-    padding: 10px 20px;
+    border-radius: 30px;
+    padding: 8px 15px;
     font-size: 14px;
     text-transform: capitalize;
     color: var(--colorWhite) !important;
@@ -5461,8 +5600,6 @@ CHECKOUT PAGE START
     background: var(--gradiantHoverBg);
 }
 
-
-
 .wsus__track_order {
     background: var(--colorWhite);
     border-radius: 5px;
@@ -5477,19 +5614,67 @@ CHECKOUT PAGE START
 }
 
 .wsus__track_order ul li {
-    width: 33%;
+    width: 33.33%;
     position: relative;
     font-size: 16px;
     font-weight: 500;
     color: var(--colorBlack);
     text-transform: capitalize;
+    padding-top: 25px;
+    text-align: center;
+    margin-top: 22px;
 }
 
-.wsus__track_order ul li::after {}
+.wsus__track_order ul li::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #eee;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
 
+.wsus__track_order ul li::before {
+    position: absolute;
+    content: "\f1ce";
+    color: var(--colorPrimary);
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    font-weight: 600;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #eee;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    z-index: 2;
+}
 
+.wsus__track_order ul li:nth-child(2)::before {
+    content: "\f2f1";
+}
 
+.wsus__track_order ul li:nth-child(3)::before {
+    content: "\f0d1";
+}
 
+.wsus__track_order ul li.active::after {
+    background: #4caf50;
+}
+
+.wsus__track_order ul li.active::before {
+    background: #4caf50;
+    color: var(--colorWhite);
+}
 
 .wsus__invoice_header {
     display: flex;
@@ -5560,6 +5745,10 @@ CHECKOUT PAGE START
     text-align: center;
 }
 
+.wsus__invoice table tr:last-child td {
+    border-bottom: .5px solid #ddd;
+}
+
 .wsus__invoice table tr td {
     color: var(--colorBlack);
     vertical-align: middle;
@@ -5603,11 +5792,11 @@ CHECKOUT PAGE START
 }
 
 .wsus__invoice table tfoot {
-    border-bottom: 1.5px solid #ddd;
+    border-bottom: .5px solid #ddd;
 }
 
 .wsus__invoice table tfoot tr td {
-    border-bottom: 1.5px solid #ddd;
+    border-bottom: .5px solid #ddd;
 }
 
 .wsus__invoice table tfoot tr td b {
@@ -5664,19 +5853,20 @@ CHECKOUT PAGE START
     display: none;
 }
 
+.wsus__invoice .print_btn {
+    padding: 10px 25px !important;
+    float: right;
+    margin-top: 35px;
+}
 
+.wsus__invoice .print_btn::after,
+.wsus__invoice .print_btn::before {
+    display: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.wsus__invoice .print_btn i {
+    margin-right: 5px;
+}
 
 .wsus__review_input .comment_input {
     background: #faf6f3fa;
@@ -6450,7 +6640,6 @@ CHECKOUT PAGE START
 }
 
 /* footer 2 end */
-
 /*============================
     HOME 2 END
 ============================*/

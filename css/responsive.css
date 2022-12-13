@@ -992,6 +992,15 @@
         width: 280px;
     }
 
+    .wsus_dashboard_existing_address {
+        margin-bottom: -20px;
+    }
+
+    .wsus_dashboard_new_address h4,
+    .wsus_dashboard_edit_address h4 {
+        font-size: 16px;
+    }
+
 }
 
 
@@ -1842,6 +1851,20 @@
         height: 350px;
         width: 350px;
         margin: 0 auto;
+    }
+
+    .wsus_dashboard_existing_address {
+        margin-bottom: -20px;
+    }
+
+    .wsus_dashboard_new_address,
+    .wsus_dashboard_edit_address {
+        padding: 15px;
+    }
+
+    .wsus_dashboard_new_address h4,
+    .wsus_dashboard_edit_address h4 {
+        font-size: 16px;
     }
 }
 
@@ -2842,6 +2865,20 @@
     .wsus__checkout_form h5,
     .wsus__checkout_form h5 a {
         font-size: 15px;
+    }
+
+    .wsus_dashboard_existing_address {
+        margin-bottom: -20px;
+    }
+
+    .wsus_dashboard_new_address,
+    .wsus_dashboard_edit_address {
+        padding: 15px;
+    }
+
+    .wsus_dashboard_new_address h4,
+    .wsus_dashboard_edit_address h4 {
+        font-size: 16px;
     }
 
 }

@@ -285,7 +285,11 @@
                     <div class="col-xl-3 col-lg-4 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__dashboard_menu">
                             <div class="dasboard_header">
-                                <img src="images/comment_img_2.png" alt="user" class="img-fluid w-100">
+                                <div class="dasboard_header_img">
+                                    <img src="images/comment_img_2.png" alt="user" class="img-fluid w-100">
+                                    <label for="upload"><i class="far fa-camera"></i></label>
+                                    <input type="file" id="upload" hidden>
+                                </div>
                                 <h2>hasib ahmed</h2>
                             </div>
                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
@@ -293,6 +297,11 @@
                                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
                                     aria-selected="true"><span><i class="fas fa-user"></i></span> Parsonal Info</button>
+
+                                <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-address" type="button" role="tab"
+                                    aria-controls="v-pills-address" aria-selected="true"><span><i
+                                            class="fas fa-user"></i></span>address</button>
 
                                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-profile" type="button" role="tab"
@@ -322,10 +331,35 @@
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
                         <div class="wsus__dashboard_content">
                             <div class="tab-content" id="v-pills-tabContent">
+
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                     aria-labelledby="v-pills-home-tab">
                                     <div class="wsus_dashboard_body">
                                         <h3>Welcome to your Profile</h3>
+
+                                        <div class="wsus__dsahboard_overview">
+                                            <div class="row">
+                                                <div class="col-xl-4 col-sm-6 col-md-4">
+                                                    <div class="wsus__dsahboard_overview_item">
+                                                        <span class="icon"><i class="far fa-shopping-basket"></i></span>
+                                                        <h4>total order <span>(76)</span></h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6 col-md-4">
+                                                    <div class="wsus__dsahboard_overview_item green">
+                                                        <span class="icon"><i class="far fa-shopping-basket"></i></span>
+                                                        <h4>Completed <span>(71)</span></h4>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-sm-6 col-md-4">
+                                                    <div class="wsus__dsahboard_overview_item red">
+                                                        <span class="icon"><i class="far fa-shopping-basket"></i></span>
+                                                        <h4>cancel <span>(05)</span></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                         <div class="wsus_dash_personal_info">
                                             <h4>Parsonal Information
                                                 <a class="dash_info_btn">
@@ -338,9 +372,6 @@
                                                 <p><span>Name:</span> Hasib Ahmed</p>
                                                 <p><span>Email:</span> hasibahmed@gmail.com</p>
                                                 <p><span>Phone:</span> 023 434 54354</p>
-                                                <p><span>Zip Code:</span> 1207</p>
-                                                <p><span>City:</span> Dhaka</p>
-                                                <p><span>Country:</span> Bangladesh</p>
                                                 <p><span>Address:</span> 7232 Broadway Suite 308, Jackson Heights,
                                                     11372, NY, United States </p>
                                             </div>
@@ -348,7 +379,7 @@
                                             <div class="wsus_dash_personal_info_edit comment_input p-0">
                                                 <form>
                                                     <div class="row">
-                                                        <div class="col-xl-6 col-lg-6">
+                                                        <div class="col-12">
                                                             <div class="wsus__comment_imput_single">
                                                                 <label>name</label>
                                                                 <input type="text" placeholder="Name">
@@ -366,30 +397,335 @@
                                                                 <input type="text" placeholder="Phone">
                                                             </div>
                                                         </div>
-                                                        <div class="col-xl-6 col-lg-6">
-                                                            <div class="wsus__comment_imput_single">
-                                                                <label>zip code</label>
-                                                                <input type="text" placeholder="Zip Code">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6">
-                                                            <div class="wsus__comment_imput_single">
-                                                                <label>country</label>
-                                                                <input type="text" placeholder="Country">
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-6 col-lg-6">
-                                                            <div class="wsus__comment_imput_single">
-                                                                <label>City</label>
-                                                                <input type="text" placeholder="City">
-                                                            </div>
-                                                        </div>
                                                         <div class="col-xl-12">
                                                             <div class="wsus__comment_imput_single">
                                                                 <label>address</label>
                                                                 <textarea rows="4" placeholder="Address"></textarea>
                                                             </div>
                                                             <button type="submit" class="common_btn">submit</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-address" role="tabpanel"
+                                    aria-labelledby="v-pills-address-tab">
+                                    <div class="wsus_dashboard_body address_body">
+                                        <h3>address <a class="dash_add_new_address"><i class="far fa-plus"></i> add new
+                                            </a>
+                                        </h3>
+                                        <div class="wsus_dashboard_address">
+                                            <div class="wsus_dashboard_existing_address">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="wsus__checkout_single_address">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="home">
+                                                                <label class="form-check-label" for="home">
+                                                                    <span class="icon"><i class="fas fa-home"></i>
+                                                                        home</span>
+                                                                    <span class="address">house# 22, road# 10, block# G,
+                                                                        Basundhara
+                                                                        Residential Area.</span>
+                                                                </label>
+                                                            </div>
+                                                            <ul>
+                                                                <li><a class="dash_edit_btn"><i
+                                                                            class="far fa-edit"></i></a></li>
+                                                                <li><a class="dash_del_icon"><i
+                                                                            class="fas fa-trash-alt"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="wsus__checkout_single_address">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="office">
+                                                                <label class="form-check-label" for="office">
+                                                                    <span class="icon"><i
+                                                                            class="far fa-car-building"></i>
+                                                                        office</span>
+                                                                    <span class="address">house# 22, road# 10, block# G,
+                                                                        Basundhara
+                                                                        Residential Area.</span>
+                                                                </label>
+                                                            </div>
+                                                            <ul>
+                                                                <li><a class="dash_edit_btn"><i
+                                                                            class="far fa-edit"></i></a></li>
+                                                                <li><a class="dash_del_icon"><i
+                                                                            class="fas fa-trash-alt"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="wsus__checkout_single_address">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="office2">
+                                                                <label class="form-check-label" for="office2">
+                                                                    <span class="icon"><i
+                                                                            class="far fa-car-building"></i>
+                                                                        office
+                                                                        2</span>
+                                                                    <span class="address">house# 22, road# 10, block# G,
+                                                                        Basundhara
+                                                                        Residential Area.</span>
+                                                                </label>
+                                                            </div>
+                                                            <ul>
+                                                                <li><a class="dash_edit_btn"><i
+                                                                            class="far fa-edit"></i></a></li>
+                                                                <li><a class="dash_del_icon"><i
+                                                                            class="fas fa-trash-alt"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="wsus__checkout_single_address">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="radio"
+                                                                    name="flexRadioDefault" id="home2">
+                                                                <label class="form-check-label" for="home2">
+                                                                    <span class="icon"><i class="fas fa-home"></i> home
+                                                                        2</span>
+                                                                    <span class="address">house# 22, road# 10, block# G,
+                                                                        Basundhara
+                                                                        Residential Area.</span>
+                                                                </label>
+                                                            </div>
+                                                            <ul>
+                                                                <li><a class="dash_edit_btn"><i
+                                                                            class="far fa-edit"></i></a></li>
+                                                                <li><a class="dash_del_icon"><i
+                                                                            class="fas fa-trash-alt"></i></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wsus_dashboard_new_address ">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h4>add new address</h4>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="First Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text"
+                                                                    placeholder="Company Name (Optional)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <select id="select_js3">
+                                                                    <option value="">select country</option>
+                                                                    <option value="">bangladesh</option>
+                                                                    <option value="">nepal</option>
+                                                                    <option value="">japan</option>
+                                                                    <option value="">korea</option>
+                                                                    <option value="">thailand</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Street Address *">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text"
+                                                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Town / City *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="State *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Zip *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Phone *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="email" placeholder="Email *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                                            <div class="wsus__check_single_form">
+                                                                <textarea cols="3" rows="4"
+                                                                    placeholder="Address"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="wsus__check_single_form check_area">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault1">
+                                                                        home
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault" id="flexRadioDefault2">
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault2">
+                                                                        office
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="button"
+                                                                class="common_btn cancel_new_address">cancel</button>
+                                                            <button type="submit" class="common_btn">save
+                                                                address</button>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="wsus_dashboard_edit_address ">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12">
+                                                            <h4>edit address </h4>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="First Name">
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Last Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text"
+                                                                    placeholder="Company Name (Optional)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <select id="select_js4">
+                                                                    <option value="">select country</option>
+                                                                    <option value="">bangladesh</option>
+                                                                    <option value="">nepal</option>
+                                                                    <option value="">japan</option>
+                                                                    <option value="">korea</option>
+                                                                    <option value="">thailand</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Street Address *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text"
+                                                                    placeholder="Apartment, suite, unit, etc. (optional)">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Town / City *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="State *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Zip *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="text" placeholder="Phone *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col-lg-12 col-xl-6">
+                                                            <div class="wsus__check_single_form">
+                                                                <input type="email" placeholder="Email *">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-12 col-lg-12 col-xl-12">
+                                                            <div class="wsus__check_single_form">
+                                                                <textarea cols="3" rows="4"
+                                                                    placeholder="Address"></textarea>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="wsus__check_single_form check_area">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault2"
+                                                                        id="flexRadioDefault12">
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault12">
+                                                                        home
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="flexRadioDefault2"
+                                                                        id="flexRadioDefault22">
+                                                                    <label class="form-check-label"
+                                                                        for="flexRadioDefault22">
+                                                                        office
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="button"
+                                                                class="common_btn cancel_edit_address">cancel</button>
+
+                                                            <button type="submit" class="common_btn">update
+                                                                address</button>
                                                         </div>
                                                     </div>
                                                 </form>
@@ -556,8 +892,8 @@
                                             <a class="go_back"><i class="fas fa-long-arrow-alt-left"></i> go back</a>
                                             <div class="wsus__track_order">
                                                 <ul>
-                                                    <li>Pending</li>
-                                                    <li>Progress</li>
+                                                    <li class="active">Processing</li>
+                                                    <li>Shipped</li>
                                                     <li>Delivered</li>
                                                 </ul>
                                             </div>
@@ -689,6 +1025,24 @@
                                                                     <b>$240</b>
                                                                 </td>
                                                             </tr>
+                                                            <tr>
+                                                                <td class="sl_no">04</td>
+                                                                <td class="package">
+                                                                    <p>Hyderabadi Biryani</p>
+                                                                    <span class="size">medium</span>
+                                                                    <span class="coca_cola">coca-cola</span>
+                                                                    <span class="coca_cola2">7up</span>
+                                                                </td>
+                                                                <td class="price">
+                                                                    <b>$120</b>
+                                                                </td>
+                                                                <td class="qnty">
+                                                                    <b>2</b>
+                                                                </td>
+                                                                <td class="total">
+                                                                    <b>$240</b>
+                                                                </td>
+                                                            </tr>
                                                         </tbody>
                                                         <tfoot>
                                                             <tr>
@@ -739,6 +1093,8 @@
                                                     </table>
                                                 </div>
                                             </div>
+                                            <a class="print_btn common_btn" href="#"><i class="far fa-print"></i> print
+                                                PDF</a>
 
                                         </div>
                                     </div>
@@ -771,10 +1127,11 @@
                                                                 biryani</a>
                                                             <h5 class="price">$70.00</h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -798,10 +1155,11 @@
                                                             <a class="title" href="menu_details.html">chicken Masala</a>
                                                             <h5 class="price">$80.00 <del>90.00</del></h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -826,10 +1184,11 @@
                                                                 shevtsova</a>
                                                             <h5 class="price">$99.00</h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -853,10 +1212,11 @@
                                                             <a class="title" href="menu_details.html">chicken Masala</a>
                                                             <h5 class="price">$80.00 <del>90.00</del></h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -880,10 +1240,11 @@
                                                             <a class="title" href="menu_details.html">chicken Masala</a>
                                                             <h5 class="price">$80.00 <del>90.00</del></h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -908,10 +1269,11 @@
                                                                 biryani</a>
                                                             <h5 class="price">$70.00</h5>
                                                             <ul class="d-flex flex-wrap justify-content-center">
-                                                                <li><a href="#"><i
+                                                                <li><a href="#" data-bs-toggle="modal"
+                                                                        data-bs-target="#cartModal"><i
                                                                             class="fas fa-shopping-basket"></i></a></li>
                                                                 <li><a href="#"><i class="fal fa-heart"></i></a></li>
-                                                                <li><a href="#"><i class="far fa-search"></i></a></li>
+                                                                <li><a href="#"><i class="far fa-eye"></i></a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
@@ -1069,6 +1431,7 @@
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -1079,7 +1442,7 @@
 
     <!-- CART POPUT START -->
     <div class="wsus__cart_popup">
-        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
@@ -1089,7 +1452,7 @@
                             <img src="images/menu1.png" alt="menu" class="img-fluid w-100">
                         </div>
                         <div class="wsus__cart_popup_text">
-                            <h2>Maxican Pizza Test Better</h2>
+                            <a href="#" class="title">Maxican Pizza Test Better</a>
                             <p class="rating">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>

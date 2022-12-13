@@ -455,21 +455,21 @@ $(function () {
     });
 
 
-    //*==========DASHBOARD TICKET==========
-    $(".ticket_invoice_view").on("click", function () {
-        $(".support_ticket").fadeOut();
+    //*==========DASHBOARD ADDRESS==========
+    $(".dash_add_new_address").on("click", function () {
+        $(".address_body").addClass("show_new_address");
     });
 
-    $('.ticket_invoice_view').on('click', function () {
-        $(".wsus__ticket_list_view").fadeIn();
+    $(".cancel_new_address").on("click", function () {
+        $(".address_body").removeClass("show_new_address");
     });
 
-    $(".go_ticket").on("click", function () {
-        $(".support_ticket").fadeIn();
+    $('.dash_edit_btn').on('click', function () {
+        $(".address_body").addClass("show_edit_address");
     });
 
-    $(".go_ticket").on("click", function () {
-        $(".wsus__ticket_list_view").fadeOut();
+    $(".cancel_edit_address").on("click", function () {
+        $(".address_body").removeClass("show_edit_address");
     });
 
 
