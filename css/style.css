@@ -2734,25 +2734,32 @@ footer {
     }
 }
 
-.wsus__about_choose_text h4,
-.wsus__about_choose_text h2,
-.wsus__about_us_text h4,
-.wsus__about_us_text h2 {
+.wsus__about_choose .wsus__section_heading h4,
+.wsus__about_choose .wsus__section_heading h2,
+.wsus__about_us .wsus__section_heading h4,
+.wsus__about_us .wsus__section_heading h2 {
     text-align: left;
 }
 
-.wsus__about_choose_text span,
-.wsus__about_us_text span {
+.wsus__about_choose .wsus__section_heading span,
+.wsus__about_us .wsus__section_heading span {
     margin: 0;
 }
 
-.wsus__about_choose_text p,
-.wsus__about_us_text p {
+.wsus__about_choose .wsus__section_heading p,
+.wsus__about_us .wsus__section_heading p {
     padding: 0 !important;
     text-align: left;
 }
 
-.wsus__about_us_text ul li {
+.wsus__about_us_text ul,
+.wsus__about_us_text ol {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wsus__about_us_text ul li,
+.wsus__about_us_text ol li {
     text-transform: capitalize;
     font-size: 16px;
     color: var(--colorBlack);
@@ -2762,7 +2769,8 @@ footer {
     margin-top: 15px;
 }
 
-.wsus__about_us_text ul li::after {
+.wsus__about_us_text ul li::after,
+.wsus__about_us_text ol li::after {
     position: absolute;
     content: "\f00c";
     color: var(--colorWhite);
@@ -2837,7 +2845,15 @@ footer {
     padding: 25px 25px 25px 0px;
 }
 
-.wsus__about_choose_text ul li {
+.wsus__about_choose_text ul,
+.wsus__about_choose_text ol {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wsus__about_choose_text ul li,
+.wsus__about_choose_text ol li {
     width: 49%;
     text-align: center;
     margin-top: 12px;
@@ -2854,7 +2870,8 @@ footer {
     color: var(--colorBlack);
 }
 
-.wsus__about_choose_text ul li span {
+.wsus__about_choose_text ul li span,
+.wsus__about_choose_text ol li span {
     color: var(--colorPrimary);
     font-size: 25px;
     margin-right: 15px;
@@ -4863,25 +4880,29 @@ CHECKOUT PAGE START
     color: var(--colorBlack);
 }
 
-.wsus__faq_img {
+.wsus__faq_form {
     margin-top: 20px;
-    height: 600px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: var(--boxShadow);
-    padding: 15px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
 }
 
-.wsus__faq_img img {
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -ms-border-radius: 8px;
-    -o-border-radius: 8px;
+.wsus__faq_form form {
+    box-shadow: var(--boxShadow);
+    padding: 25px;
+    border-radius: 1px;
+}
+
+.wsus__faq_form h3 {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.wsus__faq_form input,
+.wsus__faq_form textarea {
+    margin-top: 20px;
+}
+
+.wsus__faq_form button {
+    margin-top: 15px;
 }
 
 /*============================
@@ -5388,6 +5409,14 @@ CHECKOUT PAGE START
     display: block;
 }
 
+.wsus_dashboard_existing_address .form-check {
+    padding-left: 0;
+}
+
+.wsus_dashboard_existing_address .form-check label {
+    cursor: default;
+}
+
 .wsus_dashboard_order table {
     border-radius: 5px;
     overflow: hidden;
@@ -5614,7 +5643,7 @@ CHECKOUT PAGE START
 }
 
 .wsus__track_order ul li {
-    width: 33.33%;
+    width: 20%;
     position: relative;
     font-size: 16px;
     font-weight: 500;
@@ -5660,11 +5689,19 @@ CHECKOUT PAGE START
 }
 
 .wsus__track_order ul li:nth-child(2)::before {
-    content: "\f2f1";
+    content: "\f00c";
 }
 
 .wsus__track_order ul li:nth-child(3)::before {
+    content: "\f291";
+}
+
+.wsus__track_order ul li:nth-child(4)::before {
     content: "\f0d1";
+}
+
+.wsus__track_order ul li:nth-child(5)::before {
+    content: "\f466";
 }
 
 .wsus__track_order ul li.active::after {
@@ -6270,7 +6307,7 @@ CHECKOUT PAGE START
 }
 
 .wsus__single_team_img2 {
-    height: 250px;
+    height: 330px;
     position: relative;
     overflow: hidden;
 }
@@ -6642,4 +6679,38 @@ CHECKOUT PAGE START
 /* footer 2 end */
 /*============================
     HOME 2 END
+============================*/
+
+
+/*============================
+    SEARCH MENU START
+============================*/
+/* .wsus__search_menu_form {
+    padding: 20px;
+    background: #faf6f3fa;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.wsus__search_menu_form .nice-select {
+    padding: 12px 20px;
+}
+
+.wsus__search_menu_form button {
+    width: 100%;
+    padding: 14px 20px !important;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.wsus__search_menu_form button::after,
+.wsus__search_menu_form button::before {
+    display: none;
+} */
+
+/*============================
+SEARCH MENU END
 ============================*/

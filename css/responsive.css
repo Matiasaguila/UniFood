@@ -28,11 +28,6 @@
 
     /* ======ABOUT PAGE END====== */
 
-
-    .wsus__faq_img {
-        height: 500px;
-    }
-
     .wsus__single_comm_text {
         width: 83%;
     }
@@ -252,11 +247,6 @@
     }
 
     /* ======DASHBOARD END====== */
-
-    .wsus__faq_img {
-        height: 400px;
-    }
-
 
     /* ======MENU DETAILS START====== */
     .wsus__menu_details_text h2 {
@@ -781,7 +771,7 @@
 
     .wsus_dashboard_order table tr th,
     .wsus_dashboard_order table tr td {
-        width: 140px;
+        width: 139px;
     }
 
     .wsus_dashboard_body .wsus__invoice {
@@ -824,11 +814,6 @@
     }
 
     /* ======DASHBOARD END====== */
-
-
-    .wsus__faq_img {
-        margin-top: 25px;
-    }
 
     /* ======MENU DETAILS START====== */
     .wsus__menu_details_images {
@@ -1001,10 +986,10 @@
         font-size: 16px;
     }
 
+    .wsus__faq_form {
+        margin-top: 25px;
+    }
 }
-
-
-
 
 
 @media (min-width: 576px) and (max-width: 767.99px) {
@@ -1654,16 +1639,6 @@
 
     /* ======DASHBOARD END====== */
 
-
-    /* ======FAQs START====== */
-    .wsus__faq_img {
-        height: 400px;
-        margin-top: 25px;
-    }
-
-    /* ======FAQs END====== */
-
-
     /* ======LOGIN START====== */
     .wsus__login_area {
         padding: 30px;
@@ -1838,7 +1813,7 @@
     }
 
     .wsus__single_team_img2 {
-        height: 200px;
+        height: 250px;
     }
 
     /* ======HOME 2 END====== */
@@ -1865,6 +1840,19 @@
     .wsus_dashboard_new_address h4,
     .wsus_dashboard_edit_address h4 {
         font-size: 16px;
+    }
+
+    .wsus__faq_form {
+        margin-top: 25px;
+    }
+
+    .wsus__track_order {
+        padding-top: 10px;
+    }
+
+    .wsus__track_order ul li {
+        width: 50%;
+        margin-top: 40px;
     }
 }
 
@@ -2639,16 +2627,6 @@
 
     /* ======DASHBOARD END====== */
 
-
-    /* ======FAQs START====== */
-    .wsus__faq_img {
-        height: 250px;
-        margin-top: 25px;
-    }
-
-    /* ======FAQs END====== */
-
-
     /* ======LOGIN START====== */
     .wsus__login_area {
         padding: 20px;
@@ -2879,6 +2857,15 @@
     .wsus_dashboard_new_address h4,
     .wsus_dashboard_edit_address h4 {
         font-size: 16px;
+    }
+
+    .wsus__track_order {
+        padding-top: 10px;
+    }
+
+    .wsus__track_order ul li {
+        width: 100%;
+        margin-top: 40px;
     }
 
 }
