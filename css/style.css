@@ -522,6 +522,7 @@ button {
     margin: 0px 10px;
     padding: 0;
     position: relative;
+    cursor: pointer;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -649,29 +650,85 @@ button {
     background: var(--gradiantHoverBg);
 }
 
-
 .wsus__search_form.show {
     display: block;
 }
 
-.wsus__menu_cart_area .offcanvas-body {
+/* mini cart start */
+.wsus__menu_cart_area {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #00000066;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.wsus__menu_cart_boody {
+    width: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--colorWhite);
+    padding: 20px;
+    height: 100vh;
+    transform: scaleX(.5);
+    transform-origin: right;
+    opacity: 0;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__menu_cart_header {
     position: relative;
+    margin-bottom: 20px;
 }
 
-.wsus__menu_cart_area .offcanvas-header {
-    padding-bottom: 0;
-}
-
-.wsus__menu_cart_area .offcanvas-title {
+.wsus__menu_cart_header h5 {
     text-transform: capitalize;
     font-size: 20px;
     font-weight: 600;
 }
 
+.wsus__menu_cart_header .close_cart {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: var(--colorPrimary);
+    color: var(--colorWhite);
+    top: -4px;
+    right: 0;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: all linear .3s;
+    cursor: pointer;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.wsus__menu_cart_header .close_cart:hover {
+    background: var(--colorBlack);
+    color: var(--colorWhite);
+}
+
 .wsus__menu_cart_area ul {
     max-height: 450px;
-    overflow: hidden;
-    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .wsus__menu_cart_area ul::-webkit-scrollbar {
@@ -693,7 +750,7 @@ button {
     border: 1px solid #eee;
     padding: 10px;
     margin-bottom: 15px;
-    background: #f7f5f59c;
+    background: #f7f5f5;
     border-radius: 5px;
 }
 
@@ -781,7 +838,7 @@ button {
     line-height: 25px;
     border-radius: 50%;
     font-size: 14px;
-    background: #ffeef1;
+    background: #ffd7de;
     text-align: center;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
@@ -834,6 +891,24 @@ button {
     background: var(--gradiantHoverBg);
 }
 
+.wsus__menu_cart_area.show_mini_cart {
+    opacity: 1;
+    visibility: visible;
+}
+
+.show_mini_cart .wsus__menu_cart_boody {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+}
+
+/* mini cart end */
+
+
+/* reservation modal start */
 .wsus__reservation .modal {
     background: #0000008a;
 }
@@ -882,6 +957,8 @@ button {
 .wsus__reservation_form button:hover {
     background: var(--gradiantHoverBg);
 }
+
+/* reservation modal end */
 
 /*============================
     MENU END
@@ -1756,6 +1833,7 @@ button {
     padding-bottom: 10px;
     margin-top: 5px;
     border-bottom: 1px solid #eee;
+    text-align: center;
 }
 
 .wsus__single_team_text ul li a {
@@ -6685,7 +6763,7 @@ CHECKOUT PAGE START
 /*============================
     SEARCH MENU START
 ============================*/
-/* .wsus__search_menu_form {
+.wsus__search_menu_form {
     padding: 20px;
     background: #faf6f3fa;
     border: 1px solid #eee;
@@ -6709,7 +6787,8 @@ CHECKOUT PAGE START
 .wsus__search_menu_form button::after,
 .wsus__search_menu_form button::before {
     display: none;
-} */
+}
+
 
 /*============================
 SEARCH MENU END

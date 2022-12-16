@@ -16,11 +16,17 @@ $(function () {
         });
     }
 
-    //=========NICE SELECT=========
-    $('#select_js').niceSelect();
-    $('#select_js2').niceSelect();
-    $('#select_js3').niceSelect();
-    $('#select_js4').niceSelect();
+
+
+    //=======MENU CART======
+    $(".cart_icon").click(function () {
+        $(".wsus__menu_cart_area").addClass("show_mini_cart");
+    });
+
+    $(".close_cart").click(function () {
+        $(".wsus__menu_cart_area").removeClass("show_mini_cart");
+    });
+
 
 
     //=======MENU SEARCH======
@@ -33,11 +39,20 @@ $(function () {
     });
 
 
+
+    //=========NICE SELECT=========
+    $('#select_js').niceSelect();
+    $('#select_js2').niceSelect();
+    $('#select_js3').niceSelect();
+    $('#select_js4').niceSelect();
+
+
+
     //=======BANNER SLIDER======
     $('.banner_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000,
         cssEase: 'linear',
         dots: true,

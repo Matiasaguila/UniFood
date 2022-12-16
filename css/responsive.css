@@ -1854,6 +1854,14 @@
         width: 50%;
         margin-top: 40px;
     }
+
+    .wsus__search_menu_form input {
+        margin-bottom: 15px;
+    }
+
+    .wsus__search_menu_form button {
+        margin-top: 15px;
+    }
 }
 
 
@@ -2866,6 +2874,18 @@
     .wsus__track_order ul li {
         width: 100%;
         margin-top: 40px;
+    }
+
+    .wsus__search_menu_form input {
+        margin-bottom: 15px;
+    }
+
+    .wsus__search_menu_form button {
+        margin-top: 15px;
+    }
+
+    .wsus__menu_cart_boody {
+        width: 100%;
     }
 
 }
