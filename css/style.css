@@ -845,6 +845,10 @@ button {
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__menu_cart_area ul li .del_icon:hover {
@@ -947,6 +951,7 @@ button {
     font-size: 16px;
     font-weight: 600;
     width: 100%;
+    text-align: center;
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
@@ -1330,6 +1335,10 @@ button {
     display: block;
     color: var(--colorBlack);
     font-family: var(--headingFont);
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .wsus__offer_item_single p {
@@ -2563,6 +2572,10 @@ footer {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__footer_bottom_text ul li:first-child a::after {
@@ -2743,6 +2756,10 @@ footer {
     border-color: var(--colorPrimary);
 }
 
+.wsus__pagination ul li a:focus {
+    box-shadow: none;
+}
+
 /*============================
     PAGINATION END
 ============================*/
@@ -2754,7 +2771,7 @@ footer {
 .wsus__about_us_img {
     border-radius: 10px;
     overflow: hidden;
-    height: 400px;
+    height: 460px;
     margin-right: 50px;
 }
 
@@ -2828,6 +2845,10 @@ footer {
 .wsus__about_us .wsus__section_heading p {
     padding: 0 !important;
     text-align: left;
+}
+
+.wsus__about_us_text p {
+    margin: 15px 0px;
 }
 
 .wsus__about_us_text ul,
@@ -3131,9 +3152,12 @@ footer {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    color:
-        var(--colorPrimary);
+    color: var(--colorPrimary);
     border-right: 1px solid #E4E7E9;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__contact_form_input input,
@@ -3374,6 +3398,10 @@ footer {
     text-transform: capitalize;
     margin-right: 10px;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .blog_tags_share .tags ul li a:hover {
@@ -3561,6 +3589,14 @@ footer {
     margin: 8px 0px;
 }
 
+.wsus__single_comm_text a {
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
 .wsus__single_comment .status {
     background: #009d00;
     color: var(--colorWhite);
@@ -3638,6 +3674,15 @@ footer {
     font-size: 18px;
     color: var(--colorPrimary);
     background: none;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+
+.blog_sidebar form button:hover {
+    color: var(--colorBlack);
 }
 
 .wsus__related_blog ul li {
@@ -4000,14 +4045,16 @@ footer {
     margin-top: 25px;
 }
 
-.menu_det_description ul {
+.menu_det_description ul,
+.menu_det_description ol {
     margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.menu_det_description ul li {
+.menu_det_description ul li,
+.menu_det_description ol li {
     font-size: 16px;
     font-weight: 400;
     color: var(--paraColor);
@@ -4017,7 +4064,8 @@ footer {
     width: 49%;
 }
 
-.menu_det_description ul li::after {
+.menu_det_description ul li::after,
+.menu_det_description ol li::after {
     position: absolute;
     content: "\f00c";
     color: var(--colorWhite);
@@ -4274,6 +4322,10 @@ footer {
     margin-bottom: 5px;
     width: 100%;
     transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .wsus__cart_list table tbody tr td a:hover {
@@ -4399,6 +4451,10 @@ footer {
     top: 50%;
     right: 3px;
     transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__cart_list_footer_button button:hover {
@@ -4616,6 +4672,10 @@ CHECKOUT PAGE START
     border-radius: 2px;
     transition: all linear .3s;
     cursor: pointer;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
 }
 
 .wsus__checkout_single_address ul li a:hover {
@@ -5183,6 +5243,7 @@ CHECKOUT PAGE START
     text-transform: capitalize;
     margin-bottom: 5px;
     margin-top: 25px;
+    text-align: center;
 }
 
 .dasboard_header p {
@@ -5307,6 +5368,7 @@ CHECKOUT PAGE START
     color: orange;
     margin-top: 20px;
     font-family: var(--paraFont);
+    text-align: center;
 }
 
 .wsus__dsahboard_overview_item h4 span {
@@ -6108,6 +6170,10 @@ CHECKOUT PAGE START
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .wsus__banner2 .prevArrow {
@@ -6222,6 +6288,7 @@ CHECKOUT PAGE START
 .wsus__offer_item2 .wsus__offer_item_single .title,
 .wsus__offer_item2 .wsus__offer_item_single p {
     color: var(--colorWhite);
+    text-align: center;
 }
 
 .wsus__offer_item2 .wsus__offer_item_single:hover .img {
@@ -6457,6 +6524,7 @@ CHECKOUT PAGE START
 .wsus__single_team_text2 p {
     text-transform: capitalize;
     margin-top: 5px;
+    text-align: center;
 }
 
 .wsus__single_team2:hover ul {
@@ -6759,7 +6827,6 @@ CHECKOUT PAGE START
     HOME 2 END
 ============================*/
 
-
 /*============================
     SEARCH MENU START
 ============================*/
@@ -6776,6 +6843,7 @@ CHECKOUT PAGE START
 
 .wsus__search_menu_form button {
     width: 100%;
+    text-align: center;
     padding: 14px 20px !important;
     border-radius: 4px;
     -webkit-border-radius: 4px;
@@ -6789,7 +6857,34 @@ CHECKOUT PAGE START
     display: none;
 }
 
+/*============================
+    SEARCH MENU END
+============================*/
 
 /*============================
-SEARCH MENU END
+    SIGN IN START
+============================*/
+.wsus__login_area .form-check input {
+    float: right;
+}
+
+.wsus__login_area .form-check label {
+    padding-right: 25px;
+}
+
+.wsus__login_area ul li a {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+/*============================
+    SIGN IN END
+============================*/
+
+
+/*============================
+    START
+============================*/
+/*============================
+    END
 ============================*/
