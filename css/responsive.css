@@ -521,7 +521,7 @@
     .wsus__download_text h2,
     .wsus__download_text span,
     .wsus__download_text p {
-        text-align: center;
+        text-align: center !important;
     }
 
     .wsus__download_text ul {
@@ -989,6 +989,10 @@
     .wsus__faq_form {
         margin-top: 25px;
     }
+
+    .exzoom .exzoom_preview {
+        display: none !important;
+    }
 }
 
 
@@ -1282,7 +1286,7 @@
     .wsus__download_text h2,
     .wsus__download_text span,
     .wsus__download_text p {
-        text-align: center;
+        text-align: center !important;
     }
 
     .wsus__download_text ul {
@@ -1564,7 +1568,7 @@
     }
 
     .wsus__dashboard_content {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .wsus_dash_personal_info {
@@ -1579,10 +1583,6 @@
 
     .wsus_dash_personal_info h4 {
         font-size: 16px;
-    }
-
-    .wsus_dash_personal_info p {
-        flex-wrap: wrap;
     }
 
     .wsus_dash_personal_info.show .wsus_dash_personal_info_edit {
@@ -2202,7 +2202,7 @@
     .wsus__download_text h2,
     .wsus__download_text span,
     .wsus__download_text p {
-        text-align: center;
+        text-align: center !important;
     }
 
     .wsus__download_text ul {
@@ -2549,7 +2549,7 @@
     }
 
     .wsus__dashboard_content {
-        padding: 0;
+        padding: 0 !important;
     }
 
     .wsus_dash_personal_info {
@@ -2771,11 +2771,12 @@
     }
 
     .wsus__testimonial_text2 .rating {
-        text-align: center;
+        text-align: center !important;
     }
 
     .wsus__testimonial_text2 h4 {
         font-size: 16px;
+        text-align: center;
     }
 
     .wsus__testimonial_text2 .client_img {
@@ -2886,6 +2887,10 @@
 
     .wsus__menu_cart_boody {
         width: 100%;
+    }
+
+    .main_menu .navbar-nav .nav-item .nav-link {
+        text-align: center;
     }
 
 }
