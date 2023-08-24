@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densityDpi=device-dpi" />
-    <title>UniFood || Restaurant Template</title>
+    <title>FoodPark || Restaurant Template</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -23,14 +23,14 @@
 
 <body>
 
-    <!--=============================
+    <!--============================= 
         TOPBAR START
     ==============================-->
-    <section class="wsus__topbar">
+    <section class="fp__topbar">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-8">
-                    <ul class="wsus__topbar_info d-flex flex-wrap">
+                    <ul class="fp__topbar_info d-flex flex-wrap">
                         <li><a href="mailto:example@gmail.com"><i class="fas fa-envelope"></i> Unifood@gmail.com</a>
                         </li>
                         <li><a href="callto:123456789"><i class="fas fa-phone-alt"></i> +96487452145214</a></li>
@@ -58,7 +58,7 @@
     <nav class="navbar navbar-expand-lg main_menu">
         <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="UniFood" class="img-fluid">
+                <img src="images/logo.png" alt="FoodPark" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,7 +67,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Home <i class="far fa-plus"></i></a>
+                        <a class="nav-link active" aria-current="page" href="index.html">Home <i
+                                class="far fa-angle-down"></i></a>
                         <ul class="droap_menu">
                             <li><a class="active" href="index.html">home style 1</a></li>
                             <li><a href="index2.html">home style 2</a></li>
@@ -83,7 +84,7 @@
                         <a class="nav-link" href="chefs.html">chefs</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">pages <i class="far fa-plus"></i></a>
+                        <a class="nav-link" href="#">pages <i class="far fa-angle-down"></i></a>
                         <ul class="droap_menu">
                             <li><a href="menu_details.html">menu details</a></li>
                             <li><a href="blog_details.html">blog details</a></li>
@@ -111,7 +112,7 @@
                 <ul class="menu_icon d-flex flex-wrap">
                     <li>
                         <a href="#" class="menu_search"><i class="far fa-search"></i></a>
-                        <div class="wsus__search_form">
+                        <div class="fp__search_form">
                             <form>
                                 <span class="close_search"><i class="far fa-times"></i></span>
                                 <input type="text" placeholder="Search . . .">
@@ -121,6 +122,9 @@
                     </li>
                     <li>
                         <a class="cart_icon"><i class="fas fa-shopping-basket"></i> <span>5</span></a>
+                    </li>
+                    <li>
+                        <a class="cart_icon message_icon"><i class="fas fa-comment-alt-dots"></i> <span>7</span></a>
                     </li>
                     <li>
                         <a href="dashboard.html"><i class="fas fa-user"></i></a>
@@ -134,9 +138,9 @@
         </div>
     </nav>
 
-    <div class="wsus__menu_cart_area">
-        <div class="wsus__menu_cart_boody">
-            <div class="wsus__menu_cart_header">
+    <div class="fp__menu_cart_area">
+        <div class="fp__menu_cart_boody">
+            <div class="fp__menu_cart_header">
                 <h5>total item (05)</h5>
                 <span class="close_cart"><i class="fal fa-times"></i></span>
             </div>
@@ -211,7 +215,7 @@
         </div>
     </div>
 
-    <div class="wsus__reservation">
+    <div class="fp__reservation">
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -221,7 +225,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <form class="wsus__reservation_form">
+                        <form class="fp__reservation_form">
                             <input class="reservation_input" type="text" placeholder="Name">
                             <input class="reservation_input" type="text" placeholder="Phone">
                             <input class="reservation_input" type="date">
@@ -256,10 +260,10 @@
     <!--=============================
         BREADCRUMB START
     ==============================-->
-    <section class="wsus__breadcrumb" style="background: url(images/counter_bg.jpg);">
-        <div class="wsus__breadcrumb_overlay">
+    <section class="fp__breadcrumb" style="background: url(images/counter_bg.jpg);">
+        <div class="fp__breadcrumb_overlay">
             <div class="container">
-                <div class="wsus__breadcrumb_text">
+                <div class="fp__breadcrumb_text">
                     <h1>user dashboard</h1>
                     <ul>
                         <li><a href="index.html">home</a></li>
@@ -277,12 +281,12 @@
     <!--=========================
         DASHBOARD START
     ==========================-->
-    <section class="wsus__dashboard mt_120 xs_mt_90 mb_100 xs_mb_70">
+    <section class="fp__dashboard mt_120 xs_mt_90 mb_100 xs_mb_70">
         <div class="container">
-            <div class="wsus__dashboard_area">
+            <div class="fp__dashboard_area">
                 <div class="row">
                     <div class="col-xl-3 col-lg-4 wow fadeInUp" data-wow-duration="1s">
-                        <div class="wsus__dashboard_menu">
+                        <div class="fp__dashboard_menu">
                             <div class="dasboard_header">
                                 <div class="dasboard_header_img">
                                     <img src="images/comment_img_2.png" alt="user" class="img-fluid w-100">
@@ -295,17 +299,17 @@
                                 aria-orientation="vertical">
                                 <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                                    aria-selected="true"><span><i class="fas fa-user"></i></span> Parsonal Info</button>
+                                    aria-selected="true"><span><i class="far fa-user"></i></span> Parsonal Info</button>
 
                                 <button class="nav-link" id="v-pills-address-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-address" type="button" role="tab"
                                     aria-controls="v-pills-address" aria-selected="true"><span><i
-                                            class="fas fa-user"></i></span>address</button>
+                                            class="far fa-address-book"></i></span>address</button>
 
                                 <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-profile" type="button" role="tab"
                                     aria-controls="v-pills-profile" aria-selected="false"><span><i
-                                            class="fas fa-bags-shopping"></i></span> Order</button>
+                                            class="far fa-shopping-basket"></i></span> Order</button>
 
                                 <button class="nav-link" id="v-pills-messages-tab2" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-messages2" type="button" role="tab"
@@ -315,12 +319,17 @@
                                 <button class="nav-link" id="v-pills-messages-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-messages" type="button" role="tab"
                                     aria-controls="v-pills-messages" aria-selected="false"><span><i
-                                            class="fas fa-star"></i></span> Reviews</button>
+                                            class="far fa-star"></i></span> Reviews</button>
 
                                 <button class="nav-link" id="v-pills-settings-tab" data-bs-toggle="pill"
                                     data-bs-target="#v-pills-settings" type="button" role="tab"
                                     aria-controls="v-pills-settings" aria-selected="false"><span><i
-                                            class="fas fa-user-lock"></i></span> Change Password </button>
+                                            class="far fa-comment-dots"></i></span> Message <b>7</b></button>
+
+                                <button class="nav-link" id="v-pills-settings-tab2" data-bs-toggle="pill"
+                                    data-bs-target="#v-pills-settings2" type="button" role="tab"
+                                    aria-controls="v-pills-settings2" aria-selected="false"><span><i
+                                            class="far fa-key"></i></span> Change Password </button>
 
                                 <button class="nav-link" type="button"><span> <i class="fas fa-sign-out-alt"></i>
                                     </span> Logout</button>
@@ -328,30 +337,30 @@
                         </div>
                     </div>
                     <div class="col-xl-9 col-lg-8 wow fadeInUp" data-wow-duration="1s">
-                        <div class="wsus__dashboard_content">
+                        <div class="fp__dashboard_content">
                             <div class="tab-content" id="v-pills-tabContent">
 
                                 <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                     aria-labelledby="v-pills-home-tab">
-                                    <div class="wsus_dashboard_body">
+                                    <div class="fp_dashboard_body">
                                         <h3>Welcome to your Profile</h3>
 
-                                        <div class="wsus__dsahboard_overview">
+                                        <div class="fp__dsahboard_overview">
                                             <div class="row">
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
-                                                    <div class="wsus__dsahboard_overview_item">
+                                                    <div class="fp__dsahboard_overview_item">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
                                                         <h4>total order <span>(76)</span></h4>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
-                                                    <div class="wsus__dsahboard_overview_item green">
+                                                    <div class="fp__dsahboard_overview_item green">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
                                                         <h4>Completed <span>(71)</span></h4>
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-md-4">
-                                                    <div class="wsus__dsahboard_overview_item red">
+                                                    <div class="fp__dsahboard_overview_item red">
                                                         <span class="icon"><i class="far fa-shopping-basket"></i></span>
                                                         <h4>cancel <span>(05)</span></h4>
                                                     </div>
@@ -359,7 +368,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="wsus_dash_personal_info">
+                                        <div class="fp_dash_personal_info">
                                             <h4>Parsonal Information
                                                 <a class="dash_info_btn">
                                                     <span class="edit">edit</span>
@@ -375,29 +384,29 @@
                                                     11372, NY, United States </p>
                                             </div>
 
-                                            <div class="wsus_dash_personal_info_edit comment_input p-0">
+                                            <div class="fp_dash_personal_info_edit comment_input p-0">
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-12">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>name</label>
                                                                 <input type="text" placeholder="Name">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>email</label>
                                                                 <input type="email" placeholder="Email">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6 col-lg-6">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>phone</label>
                                                                 <input type="text" placeholder="Phone">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-12">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>address</label>
                                                                 <textarea rows="4" placeholder="Address"></textarea>
                                                             </div>
@@ -412,15 +421,15 @@
 
                                 <div class="tab-pane fade" id="v-pills-address" role="tabpanel"
                                     aria-labelledby="v-pills-address-tab">
-                                    <div class="wsus_dashboard_body address_body">
+                                    <div class="fp_dashboard_body address_body">
                                         <h3>address <a class="dash_add_new_address"><i class="far fa-plus"></i> add new
                                             </a>
                                         </h3>
-                                        <div class="wsus_dashboard_address">
-                                            <div class="wsus_dashboard_existing_address">
+                                        <div class="fp_dashboard_address">
+                                            <div class="fp_dashboard_existing_address">
                                                 <div class="row">
                                                     <div class="col-md-6">
-                                                        <div class="wsus__checkout_single_address">
+                                                        <div class="fp__checkout_single_address">
                                                             <div class="form-check">
                                                                 <label class="form-check-label">
                                                                     <span class="icon"><i class="fas fa-home"></i>
@@ -440,7 +449,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <div class="wsus__checkout_single_address">
+                                                        <div class="fp__checkout_single_address">
                                                             <div class="form-check">
                                                                 <label class="form-check-label">
                                                                     <span class="icon"><i
@@ -461,7 +470,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <div class="wsus__checkout_single_address">
+                                                        <div class="fp__checkout_single_address">
                                                             <div class="form-check">
                                                                 <label class="form-check-label">
                                                                     <span class="icon"><i
@@ -483,7 +492,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="col-md-6">
-                                                        <div class="wsus__checkout_single_address">
+                                                        <div class="fp__checkout_single_address">
                                                             <div class="form-check">
                                                                 <label class="form-check-label">
                                                                     <span class="icon"><i class="fas fa-home"></i> home
@@ -504,30 +513,30 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="wsus_dashboard_new_address ">
+                                            <div class="fp_dashboard_new_address ">
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-12">
                                                             <h4>add new address</h4>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="First Name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Last Name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text"
                                                                     placeholder="Company Name (Optional)">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <select id="select_js3">
                                                                     <option value="">select country</option>
                                                                     <option value="">bangladesh</option>
@@ -540,50 +549,50 @@
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Street Address *">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text"
                                                                     placeholder="Apartment, suite, unit, etc. (optional)">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Town / City *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="State *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Zip *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Phone *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="email" placeholder="Email *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <textarea cols="3" rows="4"
                                                                     placeholder="Address"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            <div class="wsus__check_single_form check_area">
+                                                            <div class="fp__check_single_form check_area">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio"
                                                                         name="flexRadioDefault" id="flexRadioDefault1">
@@ -611,7 +620,7 @@
                                                     </div>
                                                 </form>
                                             </div>
-                                            <div class="wsus_dashboard_edit_address ">
+                                            <div class="fp_dashboard_edit_address ">
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-12">
@@ -619,24 +628,24 @@
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="First Name">
                                                             </div>
                                                         </div>
 
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Last Name">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text"
                                                                     placeholder="Company Name (Optional)">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <select id="select_js4">
                                                                     <option value="">select country</option>
                                                                     <option value="">bangladesh</option>
@@ -648,49 +657,49 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Street Address *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text"
                                                                     placeholder="Apartment, suite, unit, etc. (optional)">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Town / City *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="State *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Zip *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="text" placeholder="Phone *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-6 col-lg-12 col-xl-6">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <input type="email" placeholder="Email *">
                                                             </div>
                                                         </div>
                                                         <div class="col-md-12 col-lg-12 col-xl-12">
-                                                            <div class="wsus__check_single_form">
+                                                            <div class="fp__check_single_form">
                                                                 <textarea cols="3" rows="4"
                                                                     placeholder="Address"></textarea>
                                                             </div>
                                                         </div>
                                                         <div class="col-12">
-                                                            <div class="wsus__check_single_form check_area">
+                                                            <div class="fp__check_single_form check_area">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="radio"
                                                                         name="flexRadioDefault2"
@@ -727,9 +736,9 @@
 
                                 <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                     aria-labelledby="v-pills-profile-tab">
-                                    <div class="wsus_dashboard_body">
+                                    <div class="fp_dashboard_body">
                                         <h3>order list</h3>
-                                        <div class="wsus_dashboard_order">
+                                        <div class="fp_dashboard_order">
                                             <div class="table-responsive">
                                                 <table class="table">
                                                     <tbody>
@@ -879,9 +888,9 @@
                                                 </table>
                                             </div>
                                         </div>
-                                        <div class="wsus__invoice">
+                                        <div class="fp__invoice">
                                             <a class="go_back"><i class="fas fa-long-arrow-alt-left"></i> go back</a>
-                                            <div class="wsus__track_order">
+                                            <div class="fp__track_order">
                                                 <ul>
                                                     <li class="active">order pending</li>
                                                     <li>order accept</li>
@@ -890,7 +899,7 @@
                                                     <li>Completed</li>
                                                 </ul>
                                             </div>
-                                            <div class="wsus__invoice_header">
+                                            <div class="fp__invoice_header">
                                                 <div class="header_address">
                                                     <h4>invoice to</h4>
                                                     <p>7232 Broadway Suite 308, Jackson Heights, 11372, NY, United
@@ -903,7 +912,7 @@
                                                     <p><b>date:</b> <span>10-11-2022</span></p>
                                                 </div>
                                             </div>
-                                            <div class="wsus__invoice_body">
+                                            <div class="fp__invoice_body">
                                                 <div class="table-responsive">
                                                     <table class="table table-striped">
                                                         <tbody>
@@ -1095,19 +1104,19 @@
 
                                 <div class="tab-pane fade " id="v-pills-messages2" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab2">
-                                    <div class="wsus_dashboard_body">
+                                    <div class="fp_dashboard_body">
                                         <h3>wishlist</h3>
-                                        <div class="wsus__dashoard_wishlist">
+                                        <div class="fp__dashoard_wishlist">
 
                                             <div class="row">
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu5.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_1.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">Biryani</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1130,13 +1139,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu6.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_2.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">chicken</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1158,13 +1167,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu4.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_3.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">grill</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1187,13 +1196,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu8.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_4.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">chicken</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1215,13 +1224,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu1.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_5.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">chicken</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1243,13 +1252,13 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-xl-4 col-sm-6 col-lg-6">
-                                                    <div class="wsus__menu_item">
-                                                        <div class="wsus__menu_item_img">
-                                                            <img src="images/menu2.png" alt="menu"
+                                                    <div class="fp__menu_item">
+                                                        <div class="fp__menu_item_img">
+                                                            <img src="images/menu2_img_6.jpg" alt="menu"
                                                                 class="img-fluid w-100">
                                                             <a class="category" href="#">Biryani</a>
                                                         </div>
-                                                        <div class="wsus__menu_item_text">
+                                                        <div class="fp__menu_item_text">
                                                             <p class="rating">
                                                                 <i class="fas fa-star"></i>
                                                                 <i class="fas fa-star"></i>
@@ -1273,7 +1282,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="wsus__pagination mt_35">
+                                            <div class="fp__pagination mt_35">
                                                 <div class="row">
                                                     <div class="col-12">
                                                         <nav aria-label="...">
@@ -1304,13 +1313,13 @@
 
                                 <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                     aria-labelledby="v-pills-messages-tab">
-                                    <div class="wsus_dashboard_body dashboard_review">
+                                    <div class="fp_dashboard_body dashboard_review">
                                         <h3>review</h3>
-                                        <div class="wsus__review_area">
-                                            <div class="wsus__comment pt-0 mt_20">
-                                                <div class="wsus__single_comment m-0 border-0">
+                                        <div class="fp__review_area">
+                                            <div class="fp__comment pt-0 mt_20">
+                                                <div class="fp__single_comment m-0 border-0">
                                                     <img src="images/menu1.png" alt="review" class="img-fluid">
-                                                    <div class="wsus__single_comm_text">
+                                                    <div class="fp__single_comm_text">
                                                         <h3><a href="#">mamun ahmed shuvo</a> <span>29 oct 2022 </span>
                                                         </h3>
                                                         <span class="rating">
@@ -1327,9 +1336,9 @@
                                                         <span class="status active">active</span>
                                                     </div>
                                                 </div>
-                                                <div class="wsus__single_comment">
+                                                <div class="fp__single_comment">
                                                     <img src="images/menu2.png" alt=" review" class="img-fluid">
-                                                    <div class="wsus__single_comm_text">
+                                                    <div class="fp__single_comm_text">
                                                         <h3><a href="#">asaduzzaman khan</a> <span>29 oct 2022 </span>
                                                         </h3>
                                                         <span class="rating">
@@ -1346,9 +1355,9 @@
                                                         <span class="status inactive">inactive</span>
                                                     </div>
                                                 </div>
-                                                <div class="wsus__single_comment">
+                                                <div class="fp__single_comment">
                                                     <img src="images/menu3.png" alt="review" class="img-fluid">
-                                                    <div class="wsus__single_comm_text">
+                                                    <div class="fp__single_comm_text">
                                                         <h3><a href="#">ariful islam rupom</a> <span>29 oct 2022 </span>
                                                         </h3>
                                                         <span class="rating">
@@ -1365,9 +1374,9 @@
                                                         <span class="status active">active</span>
                                                     </div>
                                                 </div>
-                                                <div class="wsus__single_comment">
+                                                <div class="fp__single_comment">
                                                     <img src="images/menu4.png" alt="review" class="img-fluid">
-                                                    <div class="wsus__single_comm_text">
+                                                    <div class="fp__single_comm_text">
                                                         <h3><a href="#">ali ahmed jakir</a> <span>29 oct 2022 </span>
                                                         </h3>
                                                         <span class="rating">
@@ -1392,26 +1401,120 @@
 
                                 <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
                                     aria-labelledby="v-pills-settings-tab">
-                                    <div class="wsus_dashboard_body wsus__change_password">
-                                        <div class="wsus__review_input">
+                                    <div class="fp_dashboard_body fp__change_password">
+                                        <div class="fp__message">
+                                            <h3>Message</h3>
+                                            <div class="fp__chat_area">
+                                                <div class="fp__chat_body">
+                                                    <div class="fp__chating">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/service_provider.png" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Pariatur qui amet aperiam, magni accusamus voluptatum
+                                                                neque
+                                                                aut tenetur odit officia fugit et sint harum inventore
+                                                                recusandae id quibusdam ducimus consequuntur.</p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fp__chating tf_chat_right">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/client_img_1.jpg" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fp__chating">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/service_provider.png" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Pariatur qui amet aperiam.</p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fp__chating tf_chat_right">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/client_img_1.jpg" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                                Pariatur qui amet aperiam, magni accusamus the in
+                                                                voluptatum
+                                                                neque
+                                                                aut tenetur odit officia fugit et sint harum inventore
+                                                                recusandae id quibusdam.</p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fp__chating">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/service_provider.png" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="fp__chating tf_chat_right">
+                                                        <div class="fp__chating_img">
+                                                            <img src="images/client_img_1.jpg" alt="person"
+                                                                class="img-fluid w-100">
+                                                        </div>
+                                                        <div class="fp__chating_text">
+                                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            </p>
+                                                            <span>15 Jun, 2023, 05:26 AM</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <form class="fp__single_chat_bottom">
+                                                    <label for="select_file"><i class="far fa-file-medical"
+                                                            aria-hidden="true"></i></label>
+                                                    <input id="select_file" type="file" hidden="">
+                                                    <input type="text" placeholder="Type a message...">
+                                                    <button class="fp__massage_btn"><i class="fas fa-paper-plane"
+                                                            aria-hidden="true"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel"
+                                    aria-labelledby="v-pills-settings-tab2">
+                                    <div class="fp_dashboard_body fp__change_password">
+                                        <div class="fp__review_input">
                                             <h3>change password</h3>
                                             <div class="comment_input pt-0">
                                                 <form>
                                                     <div class="row">
                                                         <div class="col-xl-6">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>Current Password</label>
                                                                 <input type="password" placeholder="Current Password">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-6">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>New Password</label>
                                                                 <input type="password" placeholder="New Password">
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-12">
-                                                            <div class="wsus__comment_imput_single">
+                                                            <div class="fp__comment_imput_single">
                                                                 <label>confirm Password</label>
                                                                 <input type="password" placeholder="Confirm Password">
                                                             </div>
@@ -1424,7 +1527,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1434,17 +1536,17 @@
     </section>
 
     <!-- CART POPUT START -->
-    <div class="wsus__cart_popup">
+    <div class="fp__cart_popup">
         <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-body">
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i
                                 class="fal fa-times"></i></button>
-                        <div class="wsus__cart_popup_img">
+                        <div class="fp__cart_popup_img">
                             <img src="images/menu1.png" alt="menu" class="img-fluid w-100">
                         </div>
-                        <div class="wsus__cart_popup_text">
+                        <div class="fp__cart_popup_text">
                             <a href="#" class="title">Maxican Pizza Test Better</a>
                             <p class="rating">
                                 <i class="fas fa-star"></i>
@@ -1522,67 +1624,16 @@
 
 
     <!--=============================
-        BRAND START
-    ==============================-->
-    <section class="wsus__brand" style="background: url(images/counter_bg.jpg);">
-        <div class="wsus__brand_overlay">
-            <div class="container">
-                <div class="row brand_slider wow fadeInUp" data-wow-duration="1s">
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_1.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_2.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_3.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_4.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_5.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_6.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                    <div class="col-xl-2">
-                        <a class="wsus__single_brand" href="#">
-                            <img src="images/brand_3.png" alt="brand" class="img-fluid w-100">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--=============================
-        BRAND END
-    ==============================-->
-
-
-    <!--=============================
         FOOTER START
     ==============================-->
-    <footer style="background: url(images/download_bg.jpg);">
+    <footer>
         <div class="footer_overlay pt_100 xs_pt_70 pb_100 xs_pb_70">
             <div class="container wow fadeInUp" data-wow-duration="1s">
                 <div class="row justify-content-between">
                     <div class="col-lg-4 col-sm-8 col-md-6">
-                        <div class="wsus__footer_content">
+                        <div class="fp__footer_content">
                             <a class="footer_logo" href="index.html">
-                                <img src="images/footer_logo.png" alt="UniFood" class="img-fluid w-100">
+                                <img src="images/footer_logo.png" alt="FoodPark" class="img-fluid w-100">
                             </a>
                             <span>There are many variations of Lorem Ipsum available, but the majority have
                                 suffered.</span>
@@ -1595,7 +1646,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-md-6">
-                        <div class="wsus__footer_content">
+                        <div class="fp__footer_content">
                             <h3>Short Link</h3>
                             <ul>
                                 <li><a href="#">Home</a></li>
@@ -1607,7 +1658,7 @@
                         </div>
                     </div>
                     <div class="col-lg-2 col-sm-4 col-md-6 order-sm-4 order-lg-3">
-                        <div class="wsus__footer_content">
+                        <div class="fp__footer_content">
                             <h3>Help Link</h3>
                             <ul>
                                 <li><a href="#">Terms And Conditions</a></li>
@@ -1618,14 +1669,14 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-8 col-md-6 order-lg-4">
-                        <div class="wsus__footer_content">
+                    <div class="col-lg-3 col-sm-8 col-md-6 order-lg-4">
+                        <div class="fp__footer_content">
                             <h3>subscribe</h3>
                             <form>
                                 <input type="text" placeholder="Subscribe">
-                                <button><i class="fas fa-paper-plane"></i></button>
+                                <button>Subscribe</button>
                             </form>
-                            <div class="wsus__footer_social_link">
+                            <div class="fp__footer_social_link">
                                 <h5>follow us:</h5>
                                 <ul class="d-flex flex-wrap">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
@@ -1641,12 +1692,12 @@
                 </div>
             </div>
         </div>
-        <div class="wsus__footer_bottom d-flex flex-wrap">
+        <div class="fp__footer_bottom d-flex flex-wrap">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <div class="wsus__footer_bottom_text d-flex flex-wrap justify-content-between">
-                            <p>Copyright 2022 <b>UniFood</b> All Rights Reserved.</p>
+                        <div class="fp__footer_bottom_text d-flex flex-wrap justify-content-between">
+                            <p>Copyright 2022 <b>FoodPark</b> All Rights Reserved.</p>
                             <ul class="d-flex flex-wrap">
                                 <li><a href="#">FAQs</a></li>
                                 <li><a href="#">payment</a></li>
@@ -1667,7 +1718,7 @@
     <!--=============================
         SCROLL BUTTON START
     ==============================-->
-    <div class="wsus__scroll_btn">
+    <div class="fp__scroll_btn">
         go to top
     </div>
     <!--=============================

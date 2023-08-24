@@ -20,22 +20,22 @@ $(function () {
 
     //=======MENU CART======
     $(".cart_icon").click(function () {
-        $(".wsus__menu_cart_area").addClass("show_mini_cart");
+        $(".fp__menu_cart_area").addClass("show_mini_cart");
     });
 
     $(".close_cart").click(function () {
-        $(".wsus__menu_cart_area").removeClass("show_mini_cart");
+        $(".fp__menu_cart_area").removeClass("show_mini_cart");
     });
 
 
 
     //=======MENU SEARCH======
     $(".menu_search").click(function () {
-        $(".wsus__search_form").addClass("show");
+        $(".fp__search_form").addClass("show");
     });
 
     $(".close_search").click(function () {
-        $(".wsus__search_form").removeClass("show");
+        $(".fp__search_form").removeClass("show");
     });
 
 
@@ -66,10 +66,10 @@ $(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 4000,
-        dots: false,
-        arrows: true,
-        nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
-        prevArrow: '<i class="far fa-long-arrow-left prevArrow"></i>',
+        dots: true,
+        arrows: false,
+        // nextArrow: '<i class="far fa-long-arrow-right nextArrow"></i>',
+        // prevArrow: '<i class="far fa-long-arrow-left prevArrow"></i>',
 
         responsive: [
             {
@@ -87,7 +87,7 @@ $(function () {
             {
                 breakpoint: 992,
                 settings: {
-                    slidesToShow: 2,
+                    slidesToShow: 1,
                 }
             },
             {
@@ -240,7 +240,7 @@ $(function () {
     $('.testi_slider').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         autoplaySpeed: 4000,
         dots: true,
         arrows: false,
@@ -325,7 +325,7 @@ $(function () {
 
 
     //*=======SCROLL BUTTON=======
-    $('.wsus__scroll_btn').on('click', function () {
+    $('.fp__scroll_btn').on('click', function () {
         $('html, body').animate({
             scrollTop: 0,
         }, 300);
@@ -335,9 +335,9 @@ $(function () {
         var scrolling = $(this).scrollTop();
 
         if (scrolling > 300) {
-            $('.wsus__scroll_btn').fadeIn();
+            $('.fp__scroll_btn').fadeIn();
         } else {
-            $('.wsus__scroll_btn').fadeOut();
+            $('.fp__scroll_btn').fadeOut();
         }
     });
 
@@ -448,25 +448,25 @@ $(function () {
 
     //*==========PERSONAL INFO==========
     $(".dash_info_btn").click(function () {
-        $(".wsus_dash_personal_info").toggleClass("show");
+        $(".fp_dash_personal_info").toggleClass("show");
     });
 
 
     //*==========ORDER HISTORY==========
     $(".view_invoice").on("click", function () {
-        $(".wsus_dashboard_order").fadeOut();
+        $(".fp_dashboard_order").fadeOut();
     });
 
     $('.view_invoice').on('click', function () {
-        $(".wsus__invoice").fadeIn();
+        $(".fp__invoice").fadeIn();
     });
 
     $(".go_back").on("click", function () {
-        $(".wsus_dashboard_order").fadeIn();
+        $(".fp_dashboard_order").fadeIn();
     });
 
     $(".go_back").on("click", function () {
-        $(".wsus__invoice").fadeOut();
+        $(".fp__invoice").fadeOut();
     });
 
 
